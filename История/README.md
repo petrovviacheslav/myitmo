@@ -4,6 +4,6 @@
 
 Журнал успеваемости потока 2023-24 учебного года 1 семестра (его нет ещё)
 
-![](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/there's-nothing-we-can-do.gif)
+![](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/e-there-is-nothing-we-can-do.gif)
 
 
