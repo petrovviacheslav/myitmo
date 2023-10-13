@@ -1,3 +1,2 @@
 # В работе...
-Hi there, I'm Viacheslav
-Computer science student, IT news writer from Russia 🇷🇺 [ITMO](https:/itmo.ru/)
+Hi there, I'm Viacheslav. Computer science student, IT news writer from Russia 🇷🇺 [ITMO](https:/itmo.ru/)
