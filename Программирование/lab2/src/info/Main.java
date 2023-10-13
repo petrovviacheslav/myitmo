@@ -1,8 +1,7 @@
 package info;
 
 import ru.ifmo.se.pokemon.*;
-import info.pockemons.*;
-import info.moves.*;
+import info.Pokemons.*;
 
 public class Main {
     public static void main(String[] args) {
