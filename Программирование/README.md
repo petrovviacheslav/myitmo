@@ -23,6 +23,5 @@
 - заменить какой-то цикл на foreach
 
 ## 2 лаба
-[Полезное видео, в котором многое поясняется](https://www.youtube.com/watch?v=9SQm6IsKJuo)
+[Полезное видео, в котором многое поясняется](https://www.youtube.com/watch?v=9SQm6IsKJuo){:target="_blank"}
 
-<a href="https://www.youtube.com/watch?v=9SQm6IsKJuo" target="_blank">Полезное видео, в котором многое поясняется</a>
