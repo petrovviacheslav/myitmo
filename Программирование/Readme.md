@@ -6,7 +6,7 @@
 > [!IMPORTANT]
 > Обязательно делайте скрины вашего варианта задания, так как он может неожиданно поменяться в тот момент, когда вы станите писать отчёт (так было в моём году). При этом вы уже не сможете подтвердить, что сделали нужный варик.
 
-![]([./gifs/monitors-typing.gif](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/monitors-typing.gif))
+![](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/monitors-typing.gif)
 
 ## 1 лаба
 Примерный пул вопросов:
