@@ -4,6 +4,10 @@ Hi there, I'm Viacheslav. Computer science student, IT news writer from Russia �
 
 > Цитата/подзаголовок
 
+title: Creating your first commit
+redirect_from:
+  - /gifs
+
 Some basic Git commands are:
 ```
 git status
