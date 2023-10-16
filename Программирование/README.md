@@ -29,7 +29,7 @@
 ```
 export CLASSPATH=./lib/Pokemon.jar:./src:./src/info/Moves/PhysicalMoves:./src/info/Moves/StatusMoves./src/info/Moves/SpecialMoves./src/info/Pokemons:./src/info/Main
 javac -d out src/info/Main.java
-jar cfm Main.jar src/META-INF/MANIFEST.MF -C out . -C lib Pokemon.jar
+jar tfm Main.jar src/META-INF/MANIFEST.MF -C out . -C lib Pokemon.jar
 java -jar Main.jar
 ```
 Возможно надо будет переписать код:
