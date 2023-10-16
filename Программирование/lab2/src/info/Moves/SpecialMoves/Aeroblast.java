@@ -6,20 +6,17 @@ public class Aeroblast extends SpecialMove {
         super(Type.FLYING, 100, 95);
     }
     
-    @Override
-    public void applyOppEffects(Pokemon p) {
 
-        // Aeroblast наносит урон и имеет увеличенный коэффициент критического удара (1/8 вместо 1/24).
+    // Aeroblast наносит урон и имеет увеличенный коэффициент критического удара (1/8 вместо 1/24).
+
+    @Override
+    protected double calcCriticalHit(Pokemon a, Pokemon d) {
+        return 3.0 * super.calcCriticalHit(a, d);
     }
 
-    // @Override
-    // public void calcCriticalHit(Pokemon p) {
-        // return 0.125;
-        // Aeroblast наносит урон и имеет увеличенный коэффициент критического удара (1/8 вместо 1/24).
-    // }
 
     @Override
     protected String describe(){
-        return "использует Aeroblast ";
+        return "использует Aeroblast";
     }
 }
