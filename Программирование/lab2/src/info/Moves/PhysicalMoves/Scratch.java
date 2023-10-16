@@ -5,12 +5,10 @@ public class Scratch extends PhysicalMove {
     public Scratch(){
         super(Type.NORMAL,40, 100);
     }
-    
-    @Override
-    public void applyOppEffects(Pokemon Pok) {
-        // одно из самых распространенных и базовых движений, 
-        // которым обучается покемон. Он наносит урон без каких-либо дополнительных эффектов.
-    }
+
+    // одно из самых распространенных и базовых движений,
+    // которым обучается покемон. Он наносит урон без каких-либо дополнительных эффектов.
+
 
     @Override
     protected String describe(){
