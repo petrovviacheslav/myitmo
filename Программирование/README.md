@@ -29,11 +29,15 @@
 ```
 export CLASSPATH=./lib/Pokemon.jar:./src:./src/info/Moves/PhysicalMoves:./src/info/Moves/StatusMoves./src/info/Moves/SpecialMoves./src/info/Pokemons:./src/info/Main
 javac -d out src/info/Main.java
-jar tfm Main.jar src/META-INF/MANIFEST.MF -C out . -C lib Pokemon.jar
+jar cfm Main.jar src/META-INF/MANIFEST.MF -C out . -C lib Pokemon.jar
 java -jar Main.jar
 ```
 Возможно надо будет переписать код:
-- При перемещении jar-файла он перестаёт запускаться (т.к. в нём находятся зависимости), решить эту проблему
+- При перемещении jar-файла он перестаёт запускаться (т.к. в нём находятся зависимости), решить эту проблему. При сборке jar-ника в него надо класть не Pokemon.jar, а разархивированные данные.
+```
+jar xf lib/Pokemon.jar
+jar cfm Main.jar src/META-INF/MANIFEST.MF -C out . -C . ru (вместо 3-ей строки при сборке)
+```
 - При нажатии Ctrl+C бой прекращается (так и должно быть), при этом надо вывести фразу "Покемон умер". Надо дописать такую строку перед созданием всех покемонов в Main.java:
 ```
 Runtime.getRuntime().addShutdownHook(new Thread(() -> {
