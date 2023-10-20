@@ -1,6 +1,6 @@
 # ...
 
-![](https://github.com/petrovviacheslav/myitmo/blob/main/"Дискра (база)"/База_от_Полякова/memes/1.jpg)
+![](https://github.com/petrovviacheslav/myitmo/blob/main/'Дискра (база)'/База_от_Полякова/memes/1.jpg)
 ![](https://github.com/petrovviacheslav/myitmo/blob/main/"Дискра (база)"/База_от_Полякова/memes/2.jpg)
 ![](https://github.com/petrovviacheslav/myitmo/blob/main/"Дискра (база)"/База_от_Полякова/memes/3.jpg)
 ![](https://github.com/petrovviacheslav/myitmo/blob/main/"Дискра (база)"/База_от_Полякова/memes/4.jpg)
