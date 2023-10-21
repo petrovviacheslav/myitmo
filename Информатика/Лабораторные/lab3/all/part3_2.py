@@ -1,5 +1,6 @@
 import re
 
+
 regexp = r'\d+'
 
 def testReg(value):
@@ -13,4 +14,5 @@ def testReg(value):
     print()
 
 
-testReg("20 + 22 = 42")
+testReg('20 + 22 = 42')
+testReg('11 + 2 = 2')
