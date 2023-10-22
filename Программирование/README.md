@@ -31,12 +31,12 @@
 После того, как вы разберётесь в типами и характеристиками идите в [документацию](https://se.ifmo.ru/~tony/doc/) и пытайтесь понять, как реализовать каждую атаку.
 Вся информация, которая вам нужна отмечена на скринах.
 
+<div vertical-aline="middle">
 <img src="https://github.com/petrovviacheslav/myitmo/blob/main/materials/pokemons/pok_att.png" width=40%>
 <img src="https://github.com/petrovviacheslav/myitmo/blob/main/materials/pokemons/pok.png" width=40%>
+</div>
 
-![](https://github.com/petrovviacheslav/myitmo/blob/main/materials/pokemons/pok_att.png)
-![](https://github.com/petrovviacheslav/myitmo/blob/main/materials/pokemons/pok.png)
-
+> 1 скрин - любая атака, 2 скрин - любой покемон
 </details>
 
 Также вот полезное [видео](https://www.youtube.com/watch?v=9SQm6IsKJuo), в котором многое поясняется.
