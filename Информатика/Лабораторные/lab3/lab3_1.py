@@ -8,7 +8,7 @@ def testReg(value):
 
 
 testReg("[<{P[<{P]<{P")  # 2
-testReg("")  # 0
+testReg("при[<{Pвет")  # 0
 testReg("]<{P[<{P]")  # 1
 testReg("[[[[[[[[<<<<<<{{{{PPPP")  # 0
 testReg("[<{P")  # 1

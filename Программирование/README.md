@@ -23,7 +23,18 @@
 - заменить какой-то цикл на foreach
 
 ## 2 лаба
-[Полезное видео, в котором многое поясняется](https://www.youtube.com/watch?v=9SQm6IsKJuo)
+<details>
+<summary>Краткий гайд на эту лабу от автора:</summary>
+
+Слеудет пользоваться второй ссылкой с сайта se.ifmo.ru -  http://pokemondb.net.
+Там подробно расписано про все атаки (их тип и что они делают) и характеристики покемонов.
+После того, как вы разберётесь в типами и характеристиками идите в [документацию](https://se.ifmo.ru/~tony/doc/) и пытайтесь понять, как реализовать каждую атаку.
+Вся информация, которая вам нужна отмечена на скринах.
+![](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/pokemons/pok-att.png)
+![](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/pokemons/pok.png)
+</details>
+
+Также вот полезное [видео](https://www.youtube.com/watch?v=9SQm6IsKJuo), в котором многое поясняется.
 
 Сборку можно провести на helios следующим образом (в cmd windows не получится). Соответственно пути надо подставить свои.
 ```
