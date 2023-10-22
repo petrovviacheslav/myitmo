@@ -31,7 +31,7 @@
 После того, как вы разберётесь в типами и характеристиками идите в [документацию](https://se.ifmo.ru/~tony/doc/) и пытайтесь понять, как реализовать каждую атаку.
 Вся информация, которая вам нужна отмечена на скринах.
 
-<div vertical-aline="middle">
+<div style="vertical-align: middle">
 <img src="https://github.com/petrovviacheslav/myitmo/blob/main/materials/pokemons/pok_att.png" width=40%>
 <img src="https://github.com/petrovviacheslav/myitmo/blob/main/materials/pokemons/pok.png" width=40%>
 </div>
