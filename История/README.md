@@ -3,6 +3,6 @@
 
 Лектор и практик: Васильев Андрей Владимирович
 
-![](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/e-there-is-nothing-we-can-do.gif)
+![](https://github.com/petrovviacheslav/myitmo/blob/main/materials/e-there-is-nothing-we-can-do.gif)
 
 

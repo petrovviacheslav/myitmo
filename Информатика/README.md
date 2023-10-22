@@ -5,7 +5,7 @@
 
 [Журнал успеваемости потока 2023-24 учебного года 1 семестра](https://docs.google.com/spreadsheets/d/1wYEDRJ5vYFfdKEqnAgb2tig-lnDwJK1-Lu-DUbmd23s)
 
-![](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/informatics.gif)
+![](https://github.com/petrovviacheslav/myitmo/blob/main/materials/informatics.gif)
 
 Все вопросы по лабам содержатся в файлах, которые Балакшин П.В. кидает в [свой канал](https://t.me/balakshin_students). Обычно сверху никаких доп вопросов не дают.
 

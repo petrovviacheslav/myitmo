@@ -5,12 +5,15 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=ИТМО+-+институт+тёплых+мужских+отношений)](https://git.io/typing-svg)
 
-![](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/computer-nerds.gif)
+![](https://github.com/petrovviacheslav/myitmo/blob/main/materials/computer-nerds.gif)
 <!---
-![](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/cat-work-in-progress.gif)
+![](https://github.com/petrovviacheslav/myitmo/blob/main/materials/cat-work-in-progress.gif)
 
-_(Обычный студент ВТ, которому сказали разобраться не понятно в чём, при этом он впервые узнал о такой технологии)_
+> _(Обычный студент ВТ, которому сказали разобраться не понятно в чём, при этом он впервые узнал о такой технологии)_
 -->
+## Дисклеймер
+Поскольку у автора не такой большой опыт в программировании, то возможны ошибки и неточности в каких-то моментах. 
+
 ## Другие полезные репозитории
 - [Гайд для перваков](https://github.com/Imtjl/1st-year-guide)
 - [https://github.com/EgorMIt/ITMO](https://github.com/EgorMIt/ITMO)
