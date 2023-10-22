@@ -24,16 +24,16 @@
 
 ## 2 лаба
 <details>
-<summary><h3>Краткий гайд на эту лабу от автора</h3></summary>
+<summary><h3>Небольшие пояснения на эту лабу от автора</h3></summary>
 
 Следует пользоваться второй ссылкой с сайта se.ifmo.ru -  http://pokemondb.net.
 Там подробно расписано про все атаки (их тип и что они делают) и характеристики покемонов.
 После того, как вы разберётесь в типами и характеристиками идите в [документацию](https://se.ifmo.ru/~tony/doc/) и пытайтесь понять, как реализовать каждую атаку.
 Вся информация, которая вам нужна отмечена на скринах.
 
-<div style="vertical-align: middle">
-<img src="https://github.com/petrovviacheslav/myitmo/blob/main/materials/pokemons/pok_att.png" width=40%>
-<img src="https://github.com/petrovviacheslav/myitmo/blob/main/materials/pokemons/pok.png" width=40%>
+<div>
+<img src="https://github.com/petrovviacheslav/myitmo/blob/main/materials/pokemons/pok_att.png" width=57% align="middle">
+<img src="https://github.com/petrovviacheslav/myitmo/blob/main/materials/pokemons/pok.png" width=40% align="middle">
 </div>
 
 > 1 скрин - любая атака, 2 скрин - любой покемон
