@@ -30,7 +30,7 @@
 Там подробно расписано про все атаки (их тип и что они делают) и характеристики покемонов.
 После того, как вы разберётесь в типами и характеристиками идите в [документацию](https://se.ifmo.ru/~tony/doc/) и пытайтесь понять, как реализовать каждую атаку.
 Вся информация, которая вам нужна отмечена на скринах.
-![](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/pokemons/pok-att.png)
+![](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/pokemons/pok_att.png)
 ![](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/pokemons/pok.png)
 </details>
 
