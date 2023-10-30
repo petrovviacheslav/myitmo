@@ -16,17 +16,22 @@
 
 ## Другие полезные репозитории
 - [Гайд для перваков](https://github.com/Imtjl/1st-year-guide)
-- [https://github.com/EgorMIt/ITMO](https://github.com/EgorMIt/ITMO)
-- [https://github.com/RomanVassilchenko/ITMOProjects](https://github.com/RomanVassilchenko/ITMOProjects)
-- [https://github.com/maxbarsukov/itmo](https://github.com/maxbarsukov/itmo/)
+- https://github.com/EgorMIt/ITMO
+- https://github.com/RomanVassilchenko/ITMOProjects
+- https://github.com/maxbarsukov/itmo
 
 Я лично пользовался этими ссылками, поэтому некоторые работы могут частично повторять первоисточники.
 
+
+## Лекторы / практики
+
+По данной [ссылке](how-to-choose-a-teacher.md) вы сможете ознакомиться с советами по выбору преподавателей от разных обучающихся.
+<!---
 ## Помощь в создании проекта
 Автор выражает благодарность за предоставление информации, а также своих работ:
-- [K0stya666](https://github.com/K0stya666)
 - ...
-
+- ...
+--->
 ## Заключение
 > [!NOTE]
 > <b>Если вы нашли для себя что-то полезное в данном репозитории, поставьте звезду :star:</b>
