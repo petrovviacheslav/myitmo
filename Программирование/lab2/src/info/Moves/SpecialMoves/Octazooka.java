@@ -1,5 +1,7 @@
 package info.Moves.SpecialMoves;
+import info.Pokemons.Claydol;
 import ru.ifmo.se.pokemon.*;
+
 
 public class Octazooka extends SpecialMove {
     public Octazooka(){
@@ -7,8 +9,8 @@ public class Octazooka extends SpecialMove {
     }
     
 
-    @Override
-    public void applyOppEffects(Pokemon p) {
+
+    public void applyOppEffects(Claydol p) {
         if (Math.random() <= 0.5){
             p.setMod(Stat.ACCURACY, -1);
             // Octazooka наносит урон и с вероятностью 50% снижает точность цели на одну ступень.
