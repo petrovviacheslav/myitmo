@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_181 (Sun Microsystems Inc.)
+Main-Class: ru.ifmo.se.pokemon.Battle
+

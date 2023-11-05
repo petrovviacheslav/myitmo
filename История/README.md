@@ -5,4 +5,6 @@
 
 ![](https://github.com/petrovviacheslav/myitmo/blob/main/materials/e-there-is-nothing-we-can-do.gif)
 
+[Поможет с аттестующими тестами](https://eat-more.narod.ru/index.html) (_в качестве подготовки_).
 
+[Поможет с обучающими тестами](https://studfile.net/spbgu-itmo/145/folder:8167/) (_в качестве подготовки_). Ctrl+f и ищете тест по названию.
