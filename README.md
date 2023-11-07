@@ -6,11 +6,7 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&width=500&lines=ИТМО+-+институт+тёплых+мужских+отношений)](https://git.io/typing-svg)
 
 ![](https://github.com/petrovviacheslav/myitmo/blob/main/materials/computer-nerds.gif)
-<!---
-![](https://github.com/petrovviacheslav/myitmo/blob/main/materials/cat-work-in-progress.gif)
 
-> _(Обычный студент ВТ, которому сказали разобраться не понятно в чём, при этом он впервые узнал о такой технологии)_
--->
 ## Дисклеймер
 Поскольку автор обычный студент, поступивший на ВТ по слабой олимпиадке (т.е. явно не лучший человек с направления), то возможны ошибки и неточности в каких-то моментах. 
 
@@ -20,7 +16,7 @@
 - https://github.com/RomanVassilchenko/ITMOProjects
 - https://github.com/maxbarsukov/itmo
 
-Я лично пользовался этими ссылками, поэтому некоторые работы могут частично повторять первоисточники.
+Я лично пользовался этими ссылками (в качестве вдохновления), поэтому некоторые работы могут частично повторять первоисточники.
 
 
 ## Лекторы / практики
