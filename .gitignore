@@ -1,1 +1,7 @@
 .idea/
+venv/
+
+
+.Информатика/Viacheslav/Лабораторные/lab4/genious_pars_xml_to_yaml/
+.Информатика/Viacheslav/Лабораторные/lab4/xml_to_tsv.py
+.Информатика/Viacheslav/Лабораторные/lab4/xml_to_yaml_reg.py
