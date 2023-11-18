@@ -1,70 +1,72 @@
 import re
 
-arr = []
-arr_tag = [[], [], [], [], []]
-counter_tag = [0, 0, 0, 0]
-
-prev_tag = ''
+f2 = open("finish.yaml", "w", encoding="utf-8")
 
 
-def create_str_yaml(arr):
-    for elem in arr:
-        find_tags(elem)
-    with open("finish.yaml", "w", encoding="utf-8") as out:
-        minus_flag = 0
-        for i in range(len(arr)):
-            gaps, tag, text, = separation(arr[i])
-
-            if '/' in tag:
-                pass
-            else:
-                ind = counter_tag[gaps // 4]
-                if ind > 0 and arr_tag[gaps // 4][ind] == arr_tag[gaps // 4][ind - 1]:
-                    print(gaps * ' ' + '  - ', file=out, end='')
-                    if len(text) > 0:
-                        print(text, file=out)
-                    minus_flag = 1
-                elif len(arr_tag[gaps // 4]) > (ind + 1) and arr_tag[gaps // 4][ind] == arr_tag[gaps // 4][ind + 1]:
-                    print(gaps * ' ' + tag + ': ', file=out)
-                    print(gaps * ' ' + '  - ', file=out, end='')
-                    if len(text) > 0:
-                        print(text, file=out)
-                    minus_flag = 1
-                else:
-                    if minus_flag:
-                        print(tag + ': ' + text, file=out)
-                    else:
-                        print(gaps * ' ' + tag + ': ' + text, file=out)
-                    minus_flag = 0
-
-                counter_tag[gaps // 4] += 1
+def create_yaml(file):
+    clear_data = re.compile(r"\n *")
+    to_one_str_file = re.sub(clear_data, '', file)
+    convert_to_yaml(to_one_str_file)
 
 
-def separation(line):
-    find_gaps = re.compile(r"^ *", re.S)
-    gaps = len(re.search(line, find_gaps)[0])//4
+def convert_to_yaml(line, gaps=0, minus=False):
+    tag, text_in, text_out = divide(line)
+    in_check_tag, out_check_tag = check_tag(text_in), check_tag(text_out)
 
-    find_tag = re.compile(r"<(\w*?)>", re.S)
-    tag = re.search(line, find_tag)
-
-    find_text = re.compile(rf"<{tag}>(\w+)<?", re.S)
-    text = re.search(line, find_text)
-
-    return gaps, tag, text
-
-
-def find_tags(line):
-    if '/' in line[line.find('<') + 1: line.find('>')]:
-        pass
+    if minus:
+        print(" " * (gaps - 2) + "- ", end="", file=f2)
     else:
-        gaps =
-        arr_tag[len(re.search(r"^ *", line)[0])//4].append(re.search(r"<([^//]\w*?)>", line))
+        print(" " * gaps, end="", file=f2)
 
-
-with open("start.xml", "r", encoding="utf-8") as f:
-    for elem in f.readlines():
-        if elem == '<?xml version="1.0" encoding="UTF-8" ?>\n':
-            continue
+    if not in_check_tag:
+        if not out_check_tag or is_this_tag_next(text_out) != tag:
+            print(tag + ": " + text_in, file=f2)
+            if is_this_tag_next(text_out) != tag and len(text_out) > 0:
+                convert_to_yaml(text_out, gaps)
+        elif out_check_tag:
+            print(tag + ": ", file=f2)
+            for elem in find_info_in_tag(tag, line):
+                print(" " * gaps + "  - " + elem, file=f2)
+    else:
+        print(tag + ": ", file=f2)
+        if not out_check_tag or is_this_tag_next(text_out) != tag:
+            convert_to_yaml(text_in, gaps + 4)
+            if is_this_tag_next(text_out) != tag and len(text_out) > 0:
+                convert_to_yaml(text_out, gaps)
         else:
-            arr.append(elem)
-    create_str_yaml(arr)
+            for elem in find_info_in_tag(tag, line):
+                convert_to_yaml(elem, gaps + 4, True)
+
+
+def divide(line):
+    find_tag = re.compile(r'<(\w+)>')
+    tag = re.search(find_tag, line).group(1)
+
+    find_text_in = re.compile(rf"<{tag}>(.*)</{tag}>")
+    text_in = re.search(find_text_in, line).group(1)
+
+    find_text_out = re.compile(rf"</{tag}>(.*)")
+    text_out = re.search(find_text_out, line).group(1)
+
+    return tag, text_in, text_out
+
+
+def check_tag(line):
+    return re.search(re.compile(r'<(\w+)>'), line)
+
+
+def is_this_tag_next(line):
+    find_tag = re.compile(r'<(\w+)>')
+    if re.search(find_tag, line):
+        return re.search(find_tag, line).group(1)
+    return ''
+
+
+def find_info_in_tag(tag, line):
+    regexp = re.compile(rf"(.*)</{tag}>")
+    return [re.search(regexp, elem).group(1) for elem in line.split(f'<{tag}>')[1:]]
+
+def start():
+    with open("start.xml", "r", encoding="utf-8") as f:
+        create_yaml(f.read())
+start()
