@@ -1,6 +1,6 @@
 import re
 
-f2 = open("finish.yaml", "w", encoding="utf-8")
+f2 = open("finish_reg.yaml", "w", encoding="utf-8")
 
 
 def create_yaml(file):

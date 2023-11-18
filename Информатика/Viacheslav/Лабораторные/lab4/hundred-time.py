@@ -3,7 +3,8 @@ import time
 from genious_pars_xml_to_yaml import xml_to_yaml
 from stupid_pars_xml_to_yaml import stupid_xml_to_yaml
 from how_is_it_work_v1 import how_is_it_work
-import xml_to_yaml_reg
+
+from stupid_reg import stupid_xml_to_yaml_reg
 import xml_to_yaml_libs
 
 if __name__ == "__main__":
@@ -28,7 +29,7 @@ if __name__ == "__main__":
 
     st = time.time()
     for _ in range(100):
-        xml_to_yaml_reg.start()
+        stupid_xml_to_yaml_reg.start()
     fin = time.time()
     print(f"С регулярками: {fin - st}")
 
