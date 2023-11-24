@@ -36,7 +36,7 @@ public class Person extends Character implements Perceptionable {
 
     @Override
     public void say(Speech type, String message, Character toCharacter, SeverityLevel level) {
-        System.out.print(this.getName() + level.getUrl());
+        System.out.print(this.getName() + level.getLevel());
         switch (type) {
             case Ask:
                 System.out.println(" спросил у " + toCharacter + " \"" + message + "\"");

@@ -1,7 +1,7 @@
 package actions;
 public enum SeverityLevel {
     NotSeriously(""),
-    Seriously("серьёзно");
+    Seriously(" серьёзно");
 
     private final String level;
 

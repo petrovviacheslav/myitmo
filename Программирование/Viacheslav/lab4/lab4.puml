@@ -1,0 +1,200 @@
+@startuml
+package src.world.heroes{
+class Person
+{
+    -name : String
+    +say(type : Speech, message : String, toCharacter : Character, level : SeverityLevel) : void
+    +say(type : Speech, message : String, level : SeverityLevel) : void
+    +look(character : Character) : void
+    +listen(person : Person, isListen : Boolean) : void
+    +closeEyes() : void
+    +openEyes() : void
+	+sit(place : String) : void
+	+equals() : bool
+	+toString() : String
+	+hashCode() : int
+}
+class Piglet {
+    -name : String
+    +nod(level : SeverityLevel) : void
+    +understand(level : UnderstandingLevel) : void
+    +push(person : Person) : void
+    +equals() : bool
+	+toString() : String
+	+hashCode() : int
+}
+
+class Rabbit {
+    -name : String
+    +ready(what : String) : void
+    +equals() : bool
+	+toString() : String
+	+hashCode() : int
+}
+
+class Vinni {
+    -name : String
+    +takePosition(description : String) : void
+    +standUp() : void
+    +feel(feelings : String, reason : String) : void
+    +equals() : bool
+	+toString() : String
+	+hashCode() : int
+}
+
+class Tiger {
+    -name : String
+    +beWean(rank : String) : void
+    +equals() : bool
+	+toString() : String
+	+hashCode() : int
+}
+
+class Title {
+    -titleName : String
+    +setTitle(title : String) : void
+    +getTitle() : String
+}
+}
+
+
+package src.world{
+
+class Forest {
+    -name : String
+    #includedItem : Character
+    +getName() : String
+    +setIncludes(character : Character) : void
+	+getIncludes() : String
+	+equals() : bool
+    +toString() : String
+    +hashCode() : int
+}
+
+enum SeverityLevel
+{
+NotSeriously
+Seriously
+}
+
+enum UnderstandingLevel
+{
+All
+Nothing
+}
+
+class River {
+    -name : String
+    +say(type : Speech, message : String, toCharacter : Character, level : SeverityLevel) : void
+    +say(type : Speech, message : String, level : SeverityLevel) : void
+    +equals() : bool
+	+toString() : String
+	+hashCode() : int
+}
+
+
+
+class Sound
+{
+    -name : String
+    +say(type : Speech, message : String, toCharacter : Character, level : SeverityLevel) : void
+    +say(type : Speech, message : String, level : SeverityLevel) : void
+    +noSay() : void
+    +equals() : bool
+	+toString() : String
+	+hashCode() : int
+}
+abstract class Character
+{
+	-name : String
+	+getName() : String
+	+noSay() : void
+	+equals() : bool
+    +toString() : String
+    +hashCode() : int
+}
+
+
+
+
+class Decription {
+    #decriptionList : ArrayList<String>
+    +setDecription(description : String...) : void
+    +getDecription() : String
+}
+
+class Condition {
+    #conditionList : ArrayList<String>
+    +setCondition(condition : String...) : void
+    +getCondition() : String
+}
+
+
+}
+
+package src.actions{
+
+enum Speech
+{
+Tell
+Ask
+Answer
+}
+
+interface Talkable
+{
++say(type : Speech, message : String, toCharacter : Character, level : SeverityLevel) : void
++say(type : Speech, message : String, level : SeverityLevel) : void
++noSay() : void
+}
+interface Lookable{
++look(сharacter : Character) : void
+}
+interface Perceptionable{
++listen(person : Person, isListen : Boolean) : void
++closeEyes() : void
++openEyes() : void
+}
+}
+package src {
+class Main
+{
++main(String[]) : void
+}
+class RuntimeException {}
+class Exception {}
+class NameError {
+    +NameError(errorMessage : String) : void
+}
+class NothingSayError {
+    +NothingSayError(errorMessage : String) : void
+}
+}
+
+
+Talkable <|-- Character
+
+Character <|-- River
+Character <|-- Sound
+Character <|-- Person
+
+Person <|-- Tiger
+Person <|-- Vinni
+Person <|-- Piglet
+Person <|-- Rabbit
+
+Sound +-- Decription
+River +-- Condition
+Tiger +-- Title
+
+RuntimeException <|- NameError
+Exception <|- NothingSayError
+
+Perceptionable <|-- Person
+Lookable <|-- Person
+
+
+
+
+
+@enduml
