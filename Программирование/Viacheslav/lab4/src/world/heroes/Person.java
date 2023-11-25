@@ -1,9 +1,10 @@
 package world.heroes;
 
 import actions.*;
+import error.NothingSayException;
 import world.Character;
 
-public class Person extends Character implements Perceptionable, Lookable {
+public class Person extends Character implements Perceptionable, Lookable, Loving {
     public Person(String name) {
         super(name);
     }
@@ -34,13 +35,17 @@ public class Person extends Character implements Perceptionable, Lookable {
     }
 
     @Override
-    public void say(Speech type, String message, Character toCharacter, SeverityLevel level) {
-        System.out.println(this.getName() + level.getLevel() + type.getType() + " " + toCharacter + type.getCase() + " \"" + message + "\"");
+    public void say(Speech type, String message, Character toCharacter, SeverityLevel level) throws NothingSayException {
+        if (message.isEmpty())
+            throw new NothingSayException(this, " не может говорить пустую строку");
+        else System.out.println(this.getName() + level.getLevel() + type.getType() + " " + toCharacter + type.getCase() + " \"" + message + "\"");
     }
 
     @Override
-    public void say(Speech type, String message, SeverityLevel level) {
-        System.out.println(this.getName() + level.getLevel() + type.getType() + " \"" + message + "\"");
+    public void say(Speech type, String message, SeverityLevel level) throws NothingSayException {
+        if (message.isEmpty())
+            throw new NothingSayException(this, " не может говорить пустую строку");
+        else System.out.println(this.getName() + level.getLevel() + type.getType() + " \"" + message + "\"");
     }
 
 
@@ -48,6 +53,12 @@ public class Person extends Character implements Perceptionable, Lookable {
     @Override
     public void look(Character character) {
         System.out.println(this.getName() + " смотрел на " + character);
+
+    }
+
+    @Override
+    public void love(Person person) {
+        System.out.println(this.getName() + " любит " + person);
 
     }
 

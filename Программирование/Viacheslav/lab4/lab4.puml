@@ -19,6 +19,7 @@ class Piglet {
     +nod(level : SeverityLevel) : void
     +understand(level : UnderstandingLevel) : void
     +push(person : Person) : void
+    +settle() : void
     +equals() : bool
 	+toString() : String
 	+hashCode() : int
@@ -60,16 +61,7 @@ class Title {
 
 package src.world{
 
-class Forest {
-    -name : String
-    #includedItem : Character
-    +getName() : String
-    +setIncludes(character : Character) : void
-	+getIncludes() : String
-	+equals() : bool
-    +toString() : String
-    +hashCode() : int
-}
+
 
 enum SeverityLevel
 {
@@ -104,6 +96,7 @@ class Sound
 	+toString() : String
 	+hashCode() : int
 }
+
 abstract class Character
 {
 	-name : String
@@ -114,7 +107,16 @@ abstract class Character
     +hashCode() : int
 }
 
-
+class Forest {
+    -name : String
+    #includedItem : Character
+    +getName() : String
+    +setIncludes(character : Character) : void
+	+getIncludes() : String
+	+equals() : bool
+    +toString() : String
+    +hashCode() : int
+}
 
 
 class Decription {
@@ -147,6 +149,9 @@ interface Talkable
 +say(type : Speech, message : String, level : SeverityLevel) : void
 +noSay() : void
 }
+interface Loving{
++love(person : Person) : void
+}
 interface Lookable{
 +look(сharacter : Character) : void
 }
@@ -161,6 +166,9 @@ class Main
 {
 +main(String[]) : void
 }
+}
+package src.error {
+
 class RuntimeException {}
 class Exception {}
 class NameError {
@@ -192,6 +200,7 @@ Exception <|- NothingSayError
 
 Perceptionable <|-- Person
 Lookable <|-- Person
+Loving <|-- Person
 
 
 

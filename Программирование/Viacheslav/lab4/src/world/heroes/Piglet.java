@@ -18,6 +18,10 @@ public class Piglet extends Person {
         System.out.println(this.getName() + " толкнул " + person);
     }
 
+    public void settle() {
+        System.out.println(this.getName() + " уладил дело");
+    }
+
     @Override
     public int hashCode() {
         return super.hashCode() + this.getName().hashCode();

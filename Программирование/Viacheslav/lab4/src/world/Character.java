@@ -1,10 +1,13 @@
 package world;
 import actions.*;
+import error.NameException;
 
 public abstract class Character implements Talkable {
     private String name;
-    public Character(String name) {
+    public Character(String name) throws NameException {
         this.name = name;
+        if(name.isEmpty())
+            throw new NameException("Объект не может быть создан без имени!");
     }
     public String getName() {
         return name == null ? "..." : name;
