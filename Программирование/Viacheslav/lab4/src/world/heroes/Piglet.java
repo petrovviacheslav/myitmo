@@ -11,7 +11,7 @@ public class Piglet extends Person {
         System.out.println(this.getName() + level.getLevel() + " кивал в ответ");
     }
     public void understand(UnderstandingLevel level) {
-        System.out.print(this.getName() + " показывает, что он " + level.getLevel() + " понимает");
+        System.out.println(this.getName() + " показывает, что он " + level.getLevel() + " понимает");
     }
 
     public void push(Person person) {

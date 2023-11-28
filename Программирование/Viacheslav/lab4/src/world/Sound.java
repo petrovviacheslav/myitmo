@@ -1,36 +1,44 @@
 package world;
 
 import actions.*;
+import world.heroes.Tiger;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Sound extends Character {
-    private ArrayList<String> descriptionList = new ArrayList<>();
+    public final Description descr;
 
     public Sound(String name) {
         super(name);
+        descr = new Description();
     }
 
-    public void setDescription(String... description) {
-        descriptionList.addAll(Arrays.asList(description));
-    }
-
-    public String getDescription() {
-        String listDescr = "";
-        for (int i = 0; i < descriptionList.size(); i++) {
-            if (i == descriptionList.size() - 1) {
-                listDescr += descriptionList.get(i) + " ";
-            } else {
-                listDescr += descriptionList.get(i) + ", ";
-            }
+    public class Description{
+        private ArrayList<String> descriptionList = new ArrayList<>();
+        public void setDescription(String... description) {
+            descriptionList.addAll(Arrays.asList(description));
         }
-        return listDescr;
+        public String getDescription() {
+            String listDescr = "";
+            for (int i = 0; i < descriptionList.size(); i++) {
+                if (i == descriptionList.size() - 1) {
+                    listDescr += descriptionList.get(i) + " ";
+                } else {
+                    listDescr += descriptionList.get(i) + ", ";
+                }
+            }
+            return listDescr;
+        }
+        @Override
+        public String toString() {
+            return getDescription();
+        }
     }
 
     @Override
     public void say(Speech type, String message, Character toCharacter, SeverityLevel level) {
-        System.out.print(this.getName() + level.getLevel() + type.getType() + "и " + toCharacter + type.getCase() + " \"" + message + "\"");
+        System.out.println(this.getName() + level.getLevel() + type.getType() + "и " + toCharacter + type.getCase() + " \"" + message + "\"");
     }
 
     @Override

@@ -16,16 +16,12 @@ public abstract class Character implements Talkable {
 
     @Override
     public boolean equals(Object ob) {
-        if (ob == this) {
-            return true;
-        }
-
-        if (ob == null || ob.getClass() != getClass()) {
-            return false;
-        }
+        if (ob == this) return true;
+        if (ob == null || ob.getClass() != getClass()) return false;
 
         Character character = (Character) ob;
         return character.name.equals(name);
+        // return Objects.equals(this.name, character.name);
 
 
     }

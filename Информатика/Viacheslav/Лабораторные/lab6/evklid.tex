@@ -1,0 +1,153 @@
+\documentclass[a4paper, 10pt]{article}
+
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{adjustbox}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{amssymb}
+
+
+
+\usepackage{geometry}
+\geometry{top=10mm}
+\geometry{bottom=5mm}
+\geometry{left=10mm}
+\geometry{right=10mm}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\pagestyle{empty}
+
+\begin{document}
+\begin{minipage}{0.55\textwidth}
+\hfill КНИГА II ПРЕДЛ. XIII. ТЕОРЕМА \hfill \llap{89}
+\vspace{6mm}
+    \begin{wrapfigure}{l}{0.13\textwidth}
+        \includegraphics[width=0.14\textwidth]{image}
+    \end{wrapfigure}
+    \\
+    \textit{\large о всяком треугольнике квадрат стороны, стягивающей острый угол, меньше суммы квадратов сторон, содержащих этот угол, на дважды прямоугольник, заключенный между любой из этих сторон и отрезком, отсекеаемым перпендикуляром из противоположного угла от этого отрезк или от продленного отрезка.}
+
+    \noindent \textit{Первый случай}
+    
+    \begin{tikzpicture}[scale=1.5, line width=2pt]
+        \draw[blue] (1,1) -- (1.6,1);
+        
+        \node[above left] at (1.1,1) {\tiny C};
+        \node[above right] at (1.5,1) {\tiny $A^2$};
+    \end{tikzpicture}
+    $<$
+    \begin{tikzpicture}[scale=1.5, line width=2pt]
+        \draw[black] (1,1) -- (1.3,1);
+        \draw[dashed, black] (1.3,1) -- (1.6,1);
+        \node[above left] at (1.1,1) {\tiny B};
+        \node[above right] at (1.5,1) {\tiny $C^2$};
+    \end{tikzpicture}
+    \textbf{$+$}
+    \begin{tikzpicture}[scale=1.5, line width=2pt]
+        \draw[orange] (1,1) -- (1.6,1);
+        
+        \node[above left] at (1.1,1) {\tiny A};
+        \node[above right] at (1.5,1) {\tiny $B^2$};
+    \end{tikzpicture}
+    \textit{на 2 \cdot}
+    \begin{tikzpicture}[scale=1.5, line width=2pt]
+        \draw[black] (1,1) -- (1.3,1);
+        \draw[dashed, black] (1.3,1) -- (1.6,1);
+        \node[above left] at (1.1,1) {\tiny B};
+        \node[above right] at (1.5,1) {\tiny C};
+    \end{tikzpicture}
+    \cdot
+    \begin{tikzpicture}[scale=1.5, line width=2pt]
+        \draw[black] (1,1) -- (1.3,1);
+        \node[above left] at (1.1,1) {\tiny B};
+        \node[above right] at (1.2,1) {\tiny D};
+    \end{tikzpicture}
+    .
+
+
+
+    \noindent \textit{Второй случай}
+    
+    \begin{tikzpicture}[scale=1.5, line width=2pt]
+        \draw[blue] (1,1) -- (1.6,1);
+        
+        \node[above left] at (1.1,1) {\tiny E};
+        \node[above right] at (1.5,1) {\tiny $G^2$};
+    \end{tikzpicture}
+    $<$
+    \begin{tikzpicture}[scale=1.5, line width=2pt]
+        \draw[orange] (1,1) -- (1.5,1);
+        \node[above left] at (1.1,1) {\tiny E};
+        \node[above right] at (1.4,1) {\tiny $F^2$};
+    \end{tikzpicture}
+    \textbf{$+$}
+    \begin{tikzpicture}[scale=1.5, line width=2pt]
+        \draw[black] (1,1) -- (1.4,1);
+        
+        \node[above left] at (1.1,1) {\tiny F};
+        \node[above right] at (1.3,1) {\tiny $G^2$};
+    \end{tikzpicture}
+    \textit{на 2 \cdot}
+    \begin{tikzpicture}[scale=1.5, line width=2pt]
+        \draw[black] (1,1) -- (1.3,1);
+        \node[above left] at (1.1,1) {\tiny F};
+        \node[above right] at (1.2,1) {\tiny G};
+    \end{tikzpicture}
+    \cdot
+    \begin{tikzpicture}[scale=1.5, line width=2pt]
+        \draw[black] (1,1) -- (1.3,1);
+        \draw[dashed, black] (1.3,1) -- (1.6,1);
+        \node[above left] at (1.1,1) {\tiny F};
+        \node[above right] at (1.5,1) {\tiny H};
+    \end{tikzpicture}
+    .
+    \vspace{90mm}
+    
+
+
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+\begin{center}
+ \Large Первый случай
+\end{center}
+\begin{tikzpicture}[scale=1.5, line width=2pt]
+    \draw[yellow] (1.1,9) -- (1.1,12);
+    \draw[red] (0,9) -- (1.1,12);
+    \draw[blue] (1.1,12) -- (3,9);
+    \draw[dashed, black] (3,9) -- (1.1,9);
+    \draw[black] (1.1,9) -- (0,9);
+    
+
+    \node[below left] at (0,9) {B};
+    \node[below] at (1.1,9) {D};
+    \node[above] at (1.1,12) {A};
+    \node[below right] at (3,9) {C};
+\end{tikzpicture}
+
+\begin{center}
+ \Large Второй случай
+\end{center}
+\begin{tikzpicture}[scale=1.5, line width=2pt]
+    \draw[blue] (1.1,9) -- (3,12);
+    \draw[yellow] (3,9) -- (3,12);
+    \draw[red] (0,9) -- (3,12);
+    \draw[dashed, black] (3,9) -- (1.1,9);
+    \draw[black] (1.1,9) -- (0,9);
+    
+
+    \node[below left] at (0,9) {F};
+    \node[below] at (1.1,9) {G};
+    \node[above] at (3,12) {E};
+    \node[below right] at (3,9) {H};
+\end{tikzpicture}
+\end{minipage}
+	
+
+
+\end{document}

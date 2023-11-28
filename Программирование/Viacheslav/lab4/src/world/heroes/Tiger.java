@@ -10,7 +10,7 @@ public class Tiger extends Person {
         title.setTitle("ужасно большой Выскочка");
     }
 
-    private class Title{
+    private static class Title{
         private String titleName;
         public void setTitle(String title){
             this.titleName = title;

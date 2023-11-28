@@ -2,32 +2,41 @@ package world;
 
 import actions.SeverityLevel;
 import actions.Speech;
+import world.heroes.Tiger;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class River extends Character {
-    private ArrayList<String> conditionList = new ArrayList<>();
 
     public River(String name) {
         super(name);
     }
 
-    public void setCondition(String... description) {
-        conditionList.addAll(Arrays.asList(description));
+
+    public class Condition{
+        private ArrayList<String> conditionList = new ArrayList<>();
+        public void setCondition(String... description) {
+            conditionList.addAll(Arrays.asList(description));
+        }
+        public String getCondition() {
+            String listDescr = River.this.getName() + " было ";
+            for (int i = 0; i < conditionList.size(); i++) {
+                if (i == conditionList.size() - 1) {
+                    listDescr += conditionList.get(i) + " ";
+                } else {
+                    listDescr += conditionList.get(i) + ", ";
+                }
+            }
+            return listDescr;
+        }
+        @Override
+        public String toString() {
+            return getCondition();
+        }
     }
 
-    public String getCondition() {
-        String listDescr = this.getName() + " было ";
-        for (int i = 0; i < conditionList.size(); i++) {
-            if (i == conditionList.size() - 1) {
-                listDescr += conditionList.get(i) + " ";
-            } else {
-                listDescr += conditionList.get(i) + ", ";
-            }
-        }
-        return listDescr;
-    }
+
 
 
     @Override

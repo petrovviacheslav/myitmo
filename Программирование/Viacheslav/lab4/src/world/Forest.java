@@ -15,9 +15,9 @@ public class Forest {
     }
 
     public String getIncludes() {
-        String item = this.getName() + " включает в себя";
+        String item = this.getName() + " включает в себя ";
         if (includedItem instanceof Sound){
-            item += ((Sound) includedItem).getDescription() + " ";
+            item += ((Sound) includedItem).descr.getDescription() + " ";
         }
         item += includedItem.toString();
         return item;
