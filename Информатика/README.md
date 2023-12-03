@@ -21,12 +21,16 @@
 ## 4 лаба
 
 Другие лабы:
-- https://github.com/MakeCheerfulUpload/laboratornaya-rabota-4-Azat2202/tree/main 
-- https://github.com/RomanVassilchenko/ITMO-My-Projects/tree/main/Year-1/Informatics%2C%20%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/lab4
-- https://github.com/maxbarsukov/itmo/tree/master/1%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B5/lab4
-- https://github.com/belovlaska/itmo/tree/main/Informatics/lab4
+
+| Ссылка                                                                                                                                                                                                              | Форматы      |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| [RomanVassilchenko](https://github.com/RomanVassilchenko/ITMO-My-Projects/tree/main/Year-1/Informatics%2C%20%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/lab4)                                | json -> yaml |
+| [maxbarsukov](https://github.com/maxbarsukov/itmo/tree/master/1%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B5/lab4) | json -> yaml |
+| [belovlaska](https://github.com/belovlaska/itmo/tree/main/Informatics/lab4)                                                                                                                                         | json -> yaml |
+| [zerumi](https://github.com/Zerumi/inf_labs/tree/master/mylabs/lab4/parser)                                                                                                                                         | xml -> json  |
 
 ## 5 лаба
 
+Если вы сделали 2 и 3 дз дискрадеда самостоятельно, то для вас лаба будет лёгкой.
 
-<a href="">ghbhdhdhdhd</a>
+[Здесь](https://av-assembler.ru/asm/afd/asm-flags-register.htm) нормально написано про флаги
