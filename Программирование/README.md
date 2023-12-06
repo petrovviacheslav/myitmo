@@ -9,21 +9,22 @@
 ![](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/monitors-typing.gif)
 
 <details>
-<summary><h3>1 лаба</h3></summary>
-
+<summary><h2 align="center">1 лаба</h2></summary>
 
 Данная лаба ориентирована на изучение ситаксиса. Если вы до этого немного прогали, то будет легко.
+
 Для сдачи/выполнения:
 - [Другие утилиты + байт-код](http://ivanbabanin.blogspot.com/2013/10/jdk.html)
 - В строке ```String str = String.format("%7.4f ", c[i][j]);``` 7 - количество символов, выделенных на данное число при выводе, 4 - число цифр после запятой в каждом числе. 
-- Если попросят представить в экспоненциальной форме или просто будут получаться огромные числа, то замените f на e. Надо уметь объяснить, откуда появляются None и Infinity (приколы с математическими операциями).
+- Если попросят представить в экспоненциальной форме или просто будут получаться огромные числа, то замените f на e. 
+- Надо уметь объяснить, откуда появляются None и Infinity (приколы с математическими операциями).
 </details>
 
 
 <details>
-<summary><h3>2 лаба</h3></summary>
+<summary><h2 align="center">2 лаба</h2></summary>
 
-Полезное [видео](https://www.youtube.com/watch?v=9SQm6IsKJuo), в котором многое поясняется.
+[Полезное видео](https://www.youtube.com/watch?v=9SQm6IsKJuo), в котором многое поясняется.
 
 Следует пользоваться второй ссылкой с сайта se.ifmo.ru -  http://pokemondb.net.
 Там подробно расписано про все атаки (их тип и что они делают) и характеристики покемонов.
@@ -47,15 +48,12 @@ java -jar Main.jar
 
 Скорее всего вопросы будут заданы, основываясь на вашем коде, поэтому когда вас попросят открыть какую-нибудь атаку, лучше не открывать что-то очень сложное. 
 
-
-Надо бы добавить сюда полезные ссылки, но мне впадлу
-
 Популярные вопросы:
-- Для чего может быть полезна конструкция X y = new Y(), если у переменной y нельзя выpывать методы класса Y?
-- Какие компоненты класса не наследуются?
-- Для чего нужен конструктор (даже автогенерируемый в пустом классе)?
-- Блок инициализации
-- Для чего нужен @Override (детально рассказать)?
+- Для чего может быть полезна конструкция X y = new Y(), если у переменной y нельзя выpывать методы класса Y? Чтобы обращаться к методам экземпляра класса, а методы могут быть переопределены
+- [Какие компоненты класса не наследуются?](https://translated.turbopages.org/proxy_u/en-ru.ru.a8bde27f-6570d643-f0b00af1-74722d776562/https/stackoverflow.com/questions/23103498/which-members-are-not-inherited-in-a-child-class)
+- [конструктор, автогенерируемый конструктор](https://javarush.com/groups/posts/1391-konstruktorih-klassov-java-jdk-15)
+- [блок инициализации](https://vertex-academy.com/tutorials/ru/bloki-inicializacii-v-java-chast-1/)
+- [@Override](https://javarush.com/groups/posts/1975-kak-ustroen-mekhanizm-pereopredelenija-metodov-)
 
 Возможные доп. задания:
 - При перемещении jar-файла он перестаёт запускаться (т.к. в нём находятся зависимости), решить эту проблему. При сборке jar-ника в него надо класть не Pokemon.jar, а разархивированные данные.
@@ -72,14 +70,14 @@ Runtime.getRuntime().addShutdownHook(new Thread(() -> {
 </details>
 
 <details>
-<summary><h3>3 лаба</h3></summary>
+<summary><h2 align="center">3 лаба</h2></summary>
+
+[Рофлогайд на эту лабу](https://www.youtube.com/watch?v=uZqMHOLqBsA&t=144s)
 
 В данной лабе перед написанием кода вам надо продумать его структуру.
 
 Uml лучше всего писать в IntelliJ IDEA Ultimate (получить можно по студенческой подписке).
-Другой вариант - скачать jar-ник plantuml с [сайта](https://plantuml.com/ru/download) и запускать его с txt-файлом, как аргументом.
-
-[Рофлогайд на эту лабу](https://www.youtube.com/watch?v=uZqMHOLqBsA&t=144s)
+Другой вариант - скачать jar-ник plantuml с [сайта](https://plantuml.com/ru/download) и запускать его через командную строку с txt-файлом, как аргументом.
 
 Для сдачи/выполнения:
 - [про equals](https://www.techiedelight.com/override-equals-hashcode-method-java/)
@@ -94,7 +92,7 @@ Uml лучше всего писать в IntelliJ IDEA Ultimate (получит
 
 
 <details>
-<summary><h3>4 лаба</h3></summary>
+<summary><h2 align="center">4 лаба</h2></summary>
 
 Для сдачи/выполнения:
 - [вложенные, анонимные, локальные классы](https://javarush.com/groups/posts/vidy-vlozhennyh-klassov)

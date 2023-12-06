@@ -8,25 +8,21 @@
 ![](https://github.com/petrovviacheslav/myitmo/blob/main/materials/computer-nerds.gif)
 
 ## Дисклеймер
-Поскольку автор обычный студент, поступивший на ВТ по слабой олимпиадке (т.е. явно не лучший человек с направления), то возможны ошибки и неточности в каких-то моментах. 
+Среди авторов есть только 1 гений (L1mPeX), остальные обычные люди, поэтому возможны ошибки и неточности
 
 ## Другие полезные репозитории
-- [Гайд для перваков](https://github.com/Imtjl/1st-year-guide)
-- https://github.com/EgorMIt/ITMO
-- https://github.com/RomanVassilchenko/ITMOProjects
-- https://github.com/maxbarsukov/itmo
+| Полезность                                                                                                                                                                                                                                                                                                                                                    | Описание                     |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
+| [Гайд для перваков](https://github.com/Imtjl/1st-year-guide)                                                                                                                                                                                                                                                                                                  | Просто офигенный гайд        |
+| [RomanVassilchenko](https://github.com/RomanVassilchenko/ITMOProjects)<br/>[maxbarsukov](https://github.com/maxbarsukov/itmo)<br/>[Gastozavr](https://github.com/Gastozavr/itmo)<br/>[kamil](https://github.com/pro100kamil/itmo/)<br/>[eliteSufferer](https://github.com/eliteSufferer/ITMO_Studies)<br/>[belovlaska](https://github.com/belovlaska/itmo)<br/>[EgorMIt](https://github.com/EgorMIt/ITMO) | Репозитории с работами       |
+| [MakeCheerfulUpload](https://github.com/orgs/MakeCheerfulUpload/repositories)                                                                                                                                                                                                                                                                                 | Сборник работ 1 сема         |
+| https://picloud.pw/cloud/                                                                                                                                                                                                                                                                                                                                     | Хранилище работ до 2020 года |
 
-Я лично пользовался этими ссылками (в качестве вдохновения), поэтому некоторые работы могут частично повторять первоисточники.
-
+Спасибо всем тем, на кого указаны ссылки здесь и также в других папках. 
 <!---
 ## Лекторы / практики
 
 По данной [ссылке](how-to-choose-a-teacher.md) вы сможете ознакомиться с советами по выбору преподавателей от разных обучающихся.
-
-## Помощь в создании проекта
-Автор выражает благодарность за предоставление информации, а также своих работ:
-- ...
-- ...
 --->
 ## Заключение
 > [!NOTE]
