@@ -9,7 +9,7 @@
 ![](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/monitors-typing.gif)
 
 <details>
-<summary><h2 align="center">1 лаба</h2></summary>
+<summary><h2>1 лаба</h2></summary>
 
 Данная лаба ориентирована на изучение ситаксиса. Если вы до этого немного прогали, то будет легко.
 
@@ -22,7 +22,7 @@
 
 
 <details>
-<summary><h2 align="center">2 лаба</h2></summary>
+<summary><h2>2 лаба</h2></summary>
 
 [Полезное видео](https://www.youtube.com/watch?v=9SQm6IsKJuo), в котором многое поясняется.
 
@@ -70,7 +70,7 @@ Runtime.getRuntime().addShutdownHook(new Thread(() -> {
 </details>
 
 <details>
-<summary><h2 align="center">3 лаба</h2></summary>
+<summary><h2>3 лаба</h2></summary>
 
 [Рофлогайд на эту лабу](https://www.youtube.com/watch?v=uZqMHOLqBsA&t=144s)
 
@@ -92,7 +92,7 @@ Uml лучше всего писать в IntelliJ IDEA Ultimate (получит
 
 
 <details>
-<summary><h2 align="center">4 лаба</h2></summary>
+<summary><h2>4 лаба</h2></summary>
 
 Для сдачи/выполнения:
 - [вложенные, анонимные, локальные классы](https://javarush.com/groups/posts/vidy-vlozhennyh-klassov)
