@@ -1,9 +1,9 @@
 [submodule "Программирование/Viacheslav/lab1"]
 	path = Программирование/Viacheslav/lab1
-	url = https://github.com/sub-myitmo/java-lab1-parzival.git
-[submodule "Программирование/java-lab2-parzival"]
-	path = Программирование/java-lab2-parzival
-	url = https://github.com/sub-myitmo/java-lab2-parzival.git
-[submodule "Программирование/java-lab3-parzival"]
-	path = Программирование/java-lab3-parzival
+	url = https://github.com/sub-myitmo/java-lab1-parzival
+[submodule "Программирование/Viacheslav/lab2"]
+	path = Программирование/Viacheslav/lab2
+	url = https://github.com/sub-myitmo/java-lab2-parzival
+[submodule "Программирование/Viacheslav/lab3"]
+	path = Программирование/Viacheslav/lab3
 	url = https://github.com/sub-myitmo/java-lab3-parzival
