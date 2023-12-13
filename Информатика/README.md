@@ -3,7 +3,7 @@
 
 [Журнал успеваемости потока 2023-24 учебного года 1 семестра](https://docs.google.com/spreadsheets/d/1wYEDRJ5vYFfdKEqnAgb2tig-lnDwJK1-Lu-DUbmd23s)
 
-![](https://github.com/petrovviacheslav/myitmo/blob/main/materials/informatics.jpg)
+![](https://i.imgur.com/M7oFGH8.jpg)
 
 Все вопросы по лабам содержатся в файлах, которые Балакшин П.В. кидает в [свой канал](https://t.me/balakshin_students). Обычно сверху никаких доп вопросов не дают (ну у П.В.Балакшина так). Если вы самостоятельно делали лабу и были на лекции, то вы защититесь на 90+.
 

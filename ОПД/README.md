@@ -3,7 +3,7 @@
 
 [Журнал успеваемости потока 2023-24 учебного года 1 семестра](https://docs.google.com/spreadsheets/d/13S-2iAf4nN32t-FHNJ_jX8qY8gaT1N2PcAmV19g3OMo/edit#gid=1376124505)
 
-![](https://github.com/petrovviacheslav/myitmo/blob/main/materials/cat-opd.gif)
+![](https://i.imgur.com/2KYoZI5.gif)
 
 > Первая лаба по ОПД be like
 

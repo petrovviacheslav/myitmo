@@ -3,7 +3,7 @@
 
 Лектор и практик: Васильев Андрей Владимирович
 
-![](https://github.com/petrovviacheslav/myitmo/blob/main/materials/e-there-is-nothing-we-can-do.gif)
+![](https://i.imgur.com/yD8i6Mc.gif)
 
 [Поможет с аттестующими тестами](https://eat-more.narod.ru/index.html) (_в качестве подготовки_).
 

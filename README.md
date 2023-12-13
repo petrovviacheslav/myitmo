@@ -5,18 +5,19 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&width=500&lines=ИТМО+-+институт+тёплых+мужских+отношений)](https://git.io/typing-svg)
 
-![](https://github.com/petrovviacheslav/myitmo/blob/main/materials/computer-nerds.gif)
-
+![](https://i.imgur.com/Vo4rI3K.gif)
+<!---
 ## Дисклеймер
 Среди авторов есть только 1 гений (L1mPeX), остальные обычные люди, поэтому возможны ошибки и неточности
-
+-->
 ## Другие полезные репозитории
-| Полезность                                                                                                                                                                                                                                                                                                                                                    | Описание                     |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| [Гайд для перваков](https://github.com/Imtjl/1st-year-guide)                                                                                                                                                                                                                                                                                                  | Просто офигенный гайд        |
-| [RomanVassilchenko](https://github.com/RomanVassilchenko/ITMOProjects)<br/>[maxbarsukov](https://github.com/maxbarsukov/itmo)<br/>[Gastozavr](https://github.com/Gastozavr/itmo)<br/>[kamil](https://github.com/pro100kamil/itmo/)<br/>[eliteSufferer](https://github.com/eliteSufferer/ITMO_Studies)<br/>[belovlaska](https://github.com/belovlaska/itmo)<br/>[EgorMIt](https://github.com/EgorMIt/ITMO) | Репозитории с работами       |
-| [MakeCheerfulUpload](https://github.com/orgs/MakeCheerfulUpload/repositories)                                                                                                                                                                                                                                                                                 | Сборник работ 1 сема         |
-| https://picloud.pw/cloud/                                                                                                                                                                                                                                                                                                                                     | Хранилище работ до 2020 года |
+| Полезность                                                                                                                                                                                                                                                                                                                       | Описание                          |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+| [Гайд для перваков](https://github.com/Imtjl/1st-year-guide)                                                                                                                                                                                                                                                                     | Просто офигенный гайд             |
+| [RomanVassilchenko](https://github.com/RomanVassilchenko/ITMOProjects)<br/>[maxbarsukov](https://github.com/maxbarsukov/itmo)<br/>[EgorMIt](https://github.com/EgorMIt/ITMO)                                                                                                                                                     | Популярные репозитории с работами |
+| [Gastozavr](https://github.com/Gastozavr/itmo)<br/>[eliteSufferer](https://github.com/eliteSufferer/ITMO_Studies)<br/>[CodeAxeAttacks](https://github.com/CodeAxeAttacks/SystemApplicationSoftware-09.03.04-ITMO)<br/>[kamil](https://github.com/pro100kamil/itmo/)<br/>[belovlaska](https://github.com/belovlaska/itmo)<br/>[bilyardvmetro](https://github.com/bilyardvmetro/ITMO-System-Application-Software) | Репозитории других ребят          |
+| [MakeCheerfulUpload](https://github.com/orgs/MakeCheerfulUpload/repositories)                                                                                                                                                                                                                                                    | Сборник работ 1 сема              |
+| https://picloud.pw/cloud/                                                                                                                                                                                                                                                                                                        | Хранилище работ до 2020 года      |
 
 Спасибо всем тем, на кого указаны ссылки здесь и также в других папках. 
 <!---

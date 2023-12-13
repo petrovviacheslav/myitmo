@@ -8,6 +8,7 @@
 
 ![](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/monitors-typing.gif)
 
+[Здесь](https://github.com/exception-s/course1) очень хорошо расписана теория для сдачи 2-4 лабы
 <details>
 <summary><h2>1 лаба</h2></summary>
 
@@ -32,8 +33,8 @@
 Вся информация, которая вам нужна отмечена на скринах.
 
 <div>
-<img src="https://github.com/petrovviacheslav/myitmo/blob/main/materials/pokemons/pok_att.png" width=57% align="middle">
-<img src="https://github.com/petrovviacheslav/myitmo/blob/main/materials/pokemons/pok.png" width=40% align="middle">
+<img src="https://i.imgur.com/gU8EqdB.png" width=57% align="middle">
+<img src="https://i.imgur.com/ui7nqbD.png" width=40% align="middle">
 </div>
 
 > 1 скрин - любая атака, 2 скрин - любой покемон
