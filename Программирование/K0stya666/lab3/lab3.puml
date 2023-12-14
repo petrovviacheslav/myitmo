@@ -1,0 +1,118 @@
+@startuml
+
+package lab3.human {
+
+abstract class Person
+{
+    -name : String
+    +getName() : String
+}
+
+class Neznayka
+{
+    +lie(place : Place) : void
+    +put_under_head(what : BodyPart, headPad : HeadPad) : void
+    +laugh(person : Person) : void
+    +reproach() : void
+    +sleep(power : SleepPower) : void
+    +say(message : String) : void
+    +equals() : bool
+    +toString() : String
+    +hashCode() : int
+}
+
+class Donut
+{
+    #mood : Mood
+    +follow() : void
+    +getComfortable (where : Place) : void
+    +ponder(thought : Thought) : void
+    +confess_to_cowardice(whom : Person) : void
+    +getCourage() : void
+    +heard(whom : Person, sound : Sound) : void
+    +make_sure(whom : Person, power : SleepPower) : void
+    +getUp() : void
+    +try_not_step(bodyPart : BodyPart) : void
+    +sneak(where : Place) : void
+    +setMood(mood : Mood) : void
+    +getMood() : Mood[]
+    +move(room : Room) : void
+    +toInteract(object : InteractingObject) : void
+    +equals() : bool
+    +toString() : String
+    +hashCode() : int
+}
+
+enum BodyParts {
+HANDS
+HEAD
+}
+}
+
+package lab3.room {
+class Food {
+    +stored(where : Place) : void
+    +toDelight() : void
+}
+
+enum InteractingObject {
+BUTTONS
+THERMOSTAT
+FRIDGE
+CLOSETS
+}
+
+enum Adjective {
+SOFT
+HARD
+}
+
+enum Place {
+adjective : Adjective
+PLASTIC
+SHELF
+COMPARTMENT_BOTTOM
+}
+
+enum HeadPad {
+FIST
+PILLOW
+}
+}
+
+package lab3 {
+enum Thought {
+FLY
+DON'T_FLY
+}
+
+enum SleepPower {
+STRONG
+notSTRONG
+}
+
+interface Interaction {
+    +toInteract(object : InteractingObject) : void
+}
+
+interface Talkable {
++say(message : String) : void
+}
+
+
+interface Moveable {
++move(room : Room) : void
+}
+}
+
+Talkable <|-- Person
+Moveable <|-- Person
+
+Person <|-- Neznayka
+Person <|-- Donut
+Interaction <|-- Person
+
+
+
+
+@enduml

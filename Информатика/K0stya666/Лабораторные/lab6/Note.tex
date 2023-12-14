@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage{musixtex}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+
+\begin{document}
+	
+	\centering
+	\large{Лабораторная работа №6, дополнительное задание Ноты}
+	
+	Елисеев Константин Иванович, P3108
+	\vspace{0.5cm}
+	
+	Номер варианта $= 1 + ((7 * 10) \bmod 27) = 17$
+	
+	Гимн Австралии
+	
+	\noindent\rule{\textwidth}{1pt}
+	\vspace{0.5cm}
+	
+	\begin{music}
+		\parindent10mm
+		\nobarnumbers % убрать нумерацию окончания тактов
+		
+		%\setstaffs1{2} % установить набор ключей
+		\generalmeter{\meterfrac44} % задать величину такта
+		%\setclef1{\bass} % установить басовый ключ
+		\generalsignature{3} % кол-во диезей
+		
+		\startextract
+			\Notes\qu{e}\en
+			\bar{|}
+			\Notes\qu{hece}\en
+			\bar{|}
+			\NOtesp\qup{h} \en
+			\NOtes\zcu{h} \en
+			\NOtesp\qu{h} \en
+			\NOtesp\zql{j} \en
+			\bar{|}
+			\NOtesp\zhl{i} \en
+			\Notes\qp \en % Четвертная тактовая пауза
+			\Notes\qu{e}\en
+			\bar{|}
+			\Notes\qu{h}\en
+			\Notes\qu{e}\en
+			\Notes\qu{c}\en
+			\Notes\qu{a}\en
+			\bar
+		\zendextract
+			
+		\startextract
+			\elemskip 0.5\elemskip
+			\NOtesp\qup{e} \en\NOtes\zcu{e} \en
+			\NOtesp\qu{e} \en
+			\NOtesp\zql{j} \en
+			\bar{|}
+			\NOtesp\zql{i} \en
+			\NOtesp\qu{h} \en
+			\NOtesp\qu{g} \en
+			\NOtesp\qu{f} \en
+			\bar{|}
+			\Notes\zhu{e} \en
+			\Notes\qp \en
+			\NOtesp\qu{e} \en
+			\bar{|}
+			\NOtesp\qup{f} \en
+			\NOtes\zcu{g} \en
+			
+		\zendextract
+	\end{music}
+	
+\end{document}
