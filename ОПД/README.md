@@ -27,19 +27,11 @@
 
 Годные курсы на степике, которые помогут изучить команды (их очень много) + опции, - [первый](https://stepik.org/course/548/syllabus) и [второй](https://stepik.org/course/762/syllabus). Если у вас мало времени, то проходите только второй.
 
-Некоторые возможные вопросы:
-- Следует прочитать про виды памяти, про работу с сегментами на дисках
-- Знать различие >/>>/>&/</<<. Объяснить, что делает «|» («пайпы»).
-- Уметь объяснить различие терминала, консоли, компилятора, интерпретатора, командной оболочки. Вот [полезная ссылка](https://www.geeksforgeeks.org/difference-between-terminal-console-shell-and-command-line/)
-- Что такое команды фильтры и какая их общая черта
-- Знать, где хранятся имена файлов
-- Уметь объяснить каждую строку вашего скрипта
-- Как сама древовидная структура файлов мэпится в памяти
-- sudo, root, выдача прав обычному пользователю
-- где хранятся какие-то важные данные (мб спросят про пароли (/bin/paswwd, /bin/shadow) или ещё что-то)
-- что такое айнод, как он указывает на данные файла
-- lvm
-- партиции
+Небольшие мануалы для сдачи:
+- [Неплохая теория для сдачи от знакомого](https://docs.google.com/document/d/19otD1kkqn4YImn4nDXEeJ2ycgZoWlZ9C/edit)
+- [Ещё один гугл док (прям с нуля)](https://docs.google.com/document/d/1XZ7bkOy13lZGQ0-5w4AaAFLb610I_oCZKR_OsyIkvao/)
+- [Дополнение к предыдущему](https://docs.google.com/document/d/1Bc6oI4yNCBIUSL9HYmv4jfmCJZzMQJRaJLEnP4KGhTY/)
+
 
 ## 2 лаба
 
@@ -47,10 +39,6 @@
 
 В принципе прочитав и поняв [методичку](https://se.ifmo.ru/documents/10180/38002/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5+%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D1%8F+%D0%BA+%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8E+%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D1%85+%D1%80%D0%B0%D0%B1%D0%BE%D1%82+%D0%B8+%D1%80%D1%83%D0%B1%D0%B5%D0%B6%D0%BD%D0%BE%D0%B3%D0%BE+%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F+%D0%91%D0%AD%D0%92%D0%9C+2019+bcomp-ng.pdf/d5a1be02-ad3f-4c43-8032-a2a04d6db12e) вы сможете спокойно сдать эту лабу
 
-Что нужно для сдачи:
-- уметь пояснять за ОДЗ
-- понимать каждый регистр
-- уметь объяснить трассировку
-- потактовое выполнение
-- флаги NZVC
-- Control unit: как работает потактово Instruction fetch, Address fetch и остальные элементы
+Мануалы:
+- [Про основное расписано](https://docs.google.com/document/d/1uIEith7IyBjr1Ml_8ONNz5hXl6lLQfBaHNtGxB_ksww/edit)
+- [Не очень подробно, но тоже норм теория](https://docs.google.com/document/d/1UIqWxUiW1aPzg4WzF9Zs3w9L5EkX_6YL/edit)
