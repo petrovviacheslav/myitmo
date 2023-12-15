@@ -50,7 +50,6 @@ java -jar Main.jar
 Скорее всего вопросы будут заданы, основываясь на вашем коде, поэтому когда вас попросят открыть какую-нибудь атаку, лучше не открывать что-то очень сложное. 
 
 Популярные вопросы:
-- Для чего может быть полезна конструкция X y = new Y(), если у переменной y нельзя выpывать методы класса Y? Чтобы обращаться к методам экземпляра класса, а методы могут быть переопределены
 - [Какие компоненты класса не наследуются?](https://translated.turbopages.org/proxy_u/en-ru.ru.a8bde27f-6570d643-f0b00af1-74722d776562/https/stackoverflow.com/questions/23103498/which-members-are-not-inherited-in-a-child-class)
 - [конструктор, автогенерируемый конструктор](https://javarush.com/groups/posts/1391-konstruktorih-klassov-java-jdk-15)
 - [блок инициализации](https://vertex-academy.com/tutorials/ru/bloki-inicializacii-v-java-chast-1/)
@@ -77,20 +76,18 @@ Runtime.getRuntime().addShutdownHook(new Thread(() -> {
 
 В данной лабе перед написанием кода вам надо продумать его структуру.
 
-Uml лучше всего писать в IntelliJ IDEA Ultimate (получить можно по студенческой подписке).
+Uml лучше всего писать в IntelliJ IDEA Ultimate ([получить можно по студенческой подписке](https://github.com/Imtjl/1st-year-guide/blob/main/PROG/Jet_brains.pdf)).
 Другой вариант - скачать jar-ник plantuml с [сайта](https://plantuml.com/ru/download) и запускать его через командную строку с txt-файлом, как аргументом.
 
 Для сдачи/выполнения:
 - [про equals](https://www.techiedelight.com/override-equals-hashcode-method-java/)
-- [про hashCode](https://translated.turbopages.org/proxy_u/en-ru.ru.d44f927c-65666aea-254b8a62-74722d776562/https/www.baeldung.com/java-hashcode) и [методы его реализации](https://habr.com/ru/companies/vk/articles/321306/)
+- [про hashCode](https://www.baeldung.com/java-hashcode) и [методы его реализации](https://habr.com/ru/companies/vk/articles/321306/)
 - [SOLID](https://allineed.ru/development/java-development/82-java-solid-principles)
 - [STUPID](https://it.badykov.com/blog/2020/03/08/stupid-principles/)
 - [интерфейсы по умолчанию](https://metanit.com/java/tutorial/3.7.php)
 - [ковариантность](https://pr0java.blogspot.com/2015/07/blog-post_47.html)
 
 </details>
-
-
 
 <details>
 <summary><h2>4 лаба</h2></summary>
