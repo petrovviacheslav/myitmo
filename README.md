@@ -9,24 +9,24 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&width=500&lines=ИТМО+-+институт+тёплых+мужских+отношений)](https://git.io/typing-svg)
 
 ![](https://i.imgur.com/Vo4rI3K.gif)
-<!---
+
 ## Дисклеймер
 Среди авторов есть только 1 гений (L1mPeX), остальные обычные люди, поэтому возможны ошибки и неточности
--->
-## Другие полезные репозитории
-| Полезность                                                                                                                                                                                                                                                          | Описание                                    |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| [Гайд для перваков](https://github.com/Imtjl/1st-year-guide)                                                                                                                                                                                                        | Просто офигенный гайд                       |
-| [RomanVassilchenko](https://github.com/RomanVassilchenko/ITMOProjects)<br/>[maxbarsukov](https://github.com/maxbarsukov/itmo)<br/>[EgorMIt](https://github.com/EgorMIt/ITMO)<br/>[RedGry](https://github.com/RedGry/ITMO)                                                                               | Популярные репозитории с работами           |
-| [Black Rider](https://github.com/eliteSufferer/ITMO_Studies)<br/>[kamil](https://github.com/pro100kamil/itmo/)<br/>[belovlaska](https://github.com/belovlaska/itmo)<br/>[CodeAxeAttacks](https://github.com/CodeAxeAttacks/SystemApplicationSoftware-09.03.04-ITMO) | Репозитории других ребят (поступили в 2022) |
-| [Vaneshik](https://github.com/Vaneshik/VT-Labs)<br/>[bilyardvmetro](https://github.com/bilyardvmetro/ITMO-System-Application-Software) <br/>[Gastozavr](https://github.com/Gastozavr/itmo)                                                                          | Репозитории других ребят (поступили в 2023) |
-| [MakeCheerfulUpload](https://github.com/orgs/MakeCheerfulUpload/repositories)                                                                                                                                                                                       | Сборник работ 1 сема                        |
-| https://picloud.pw/cloud/                                                                                                                                                                                                                                           | Хранилище работ до 2020 года                |
-
-Спасибо всем тем, на кого указаны ссылки здесь и также в других папках. 
 
 ## Лекторы / практики
-По данной [ссылке](./how-to-choose-a-teacher.md) вы сможете ознакомиться с советами по выбору преподавателей от разных обучающихся.
+По данной [ссылке](./how-to-choose-a-teacher.md) вы сможете ознакомиться с советами по выбору преподавателей от разных обучающихся
+
+## Другие полезные репозитории
+| Полезность                                                                                                                                                                                                                                                                   | Описание                                    |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| [Гайд для перваков](https://github.com/Imtjl/1st-year-guide)                                                                                                                                                                                                                 | Просто офигенный гайд                       |
+| [RomanVassilchenko](https://github.com/RomanVassilchenko/ITMOProjects)<br/>[maxbarsukov](https://github.com/maxbarsukov/itmo)<br/>[EgorMIt](https://github.com/EgorMIt/ITMO)<br/>[RedGry](https://github.com/RedGry/ITMO)                                                    | Популярные репозитории с работами           |
+| [Black Rider](https://github.com/eliteSufferer/ITMO_Studies)<br/>[kamil](https://github.com/pro100kamil/itmo/)<br/>[belovlaska](https://github.com/belovlaska/itmo)<br/>[CodeAxeAttacks](https://github.com/CodeAxeAttacks/SystemApplicationSoftware-09.03.04-ITMO)<br/>[VeraKasianenko](https://github.com/VeraKasianenko/ITMO_Software_engineering) | Репозитории других ребят (поступили в 2022) |
+| [Vaneshik](https://github.com/Vaneshik/VT-Labs)<br/>[bilyardvmetro](https://github.com/bilyardvmetro/ITMO-System-Application-Software) <br/>[Gastozavr](https://github.com/Gastozavr/itmo)<br/>[ren1kron](https://github.com/ren1kron/ITMO-University)                       | Репозитории других ребят (поступили в 2023) |
+| [MakeCheerfulUpload](https://github.com/orgs/MakeCheerfulUpload/repositories)                                                                                                                                                                                                | Сборник работ 1 сема                        |
+| https://picloud.pw/cloud/                                                                                                                                                                                                                                                    | Хранилище работ до 2020 года                |
+
+Спасибо всем тем, на кого указаны ссылки здесь и также в других папках. 
 
 ## Лицензия
 [![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
