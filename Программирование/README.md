@@ -8,7 +8,15 @@
 
 ![](https://github.com/petrovviacheslav/myitmo/blob/main/gifs/monitors-typing.gif)
 
+## Рубежки
+
+[](https://i.imgur.com/JTfHMx1.jpg)
+
+Вопросы из года в год повторяются, поэтому советую посмотреть [самые популярные](./Рубежки/)
+
+## Лабы
 [Здесь](https://github.com/exception-s/course1) очень хорошо расписана теория для сдачи 2-4 лабы
+
 <details>
 <summary><h2>1 лаба</h2></summary>
 
@@ -53,7 +61,7 @@ java -jar Main.jar
 - [Какие компоненты класса не наследуются?](https://translated.turbopages.org/proxy_u/en-ru.ru.a8bde27f-6570d643-f0b00af1-74722d776562/https/stackoverflow.com/questions/23103498/which-members-are-not-inherited-in-a-child-class)
 - [конструктор, автогенерируемый конструктор](https://javarush.com/groups/posts/1391-konstruktorih-klassov-java-jdk-15)
 - [блок инициализации](https://vertex-academy.com/tutorials/ru/bloki-inicializacii-v-java-chast-1/)
-- [@Override](https://javarush.com/groups/posts/1975-kak-ustroen-mekhanizm-pereopredelenija-metodov-)
+- [теория по всему остальному](https://github.com/exception-s/course1?tab=readme-ov-file#%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-2)
 
 Возможные доп. задания:
 - При перемещении jar-файла он перестаёт запускаться (т.к. в нём находятся зависимости), решить эту проблему. При сборке jar-ника в него надо класть не Pokemon.jar, а разархивированные данные.
@@ -74,8 +82,6 @@ Runtime.getRuntime().addShutdownHook(new Thread(() -> {
 
 [Рофлогайд на эту лабу](https://www.youtube.com/watch?v=uZqMHOLqBsA&t=144s)
 
-В данной лабе перед написанием кода вам надо продумать его структуру.
-
 Uml лучше всего писать в IntelliJ IDEA Ultimate ([получить можно по студенческой подписке](https://github.com/Imtjl/1st-year-guide/blob/main/PROG/Jet_brains.pdf)).
 Другой вариант - скачать jar-ник plantuml с [сайта](https://plantuml.com/ru/download) и запускать его через командную строку с txt-файлом, как аргументом.
 
@@ -83,9 +89,8 @@ Uml лучше всего писать в IntelliJ IDEA Ultimate ([получи�
 - [про equals](https://www.techiedelight.com/override-equals-hashcode-method-java/)
 - [про hashCode](https://www.baeldung.com/java-hashcode) и [методы его реализации](https://habr.com/ru/companies/vk/articles/321306/)
 - [SOLID](https://allineed.ru/development/java-development/82-java-solid-principles)
-- [STUPID](https://it.badykov.com/blog/2020/03/08/stupid-principles/)
 - [интерфейсы по умолчанию](https://metanit.com/java/tutorial/3.7.php)
-- [ковариантность](https://pr0java.blogspot.com/2015/07/blog-post_47.html)
+- [теория по всему остальному](https://github.com/exception-s/course1?tab=readme-ov-file#%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-3)
 
 </details>
 
@@ -93,6 +98,6 @@ Uml лучше всего писать в IntelliJ IDEA Ultimate ([получи�
 <summary><h2>4 лаба</h2></summary>
 
 Для сдачи/выполнения:
-- [вложенные, анонимные, локальные классы](https://javarush.com/groups/posts/vidy-vlozhennyh-klassov)
+- [теория](https://github.com/exception-s/course1?tab=readme-ov-file#%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-4)
 
 </details>

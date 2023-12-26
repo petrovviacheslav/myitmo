@@ -1,6 +1,6 @@
-public class Main { 
-    public static void main(String[] args) { 
-    
+
+public class Main {
+    public static void main(String[] args) {
 	long[] a = new long[10];
 	for(int i = 0, k = 2; i < 10; i++){
 	    a[i] = k;
