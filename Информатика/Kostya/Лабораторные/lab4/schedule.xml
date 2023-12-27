@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schedule>
+  <day>Четверг</day>
+  <classes>
+    <classes1>
+      <time>08:20-09:50</time>
+      <subject>История России и мира в ХХ веке (практика)</subject>
+      <location>Ауд. 2336, Кронверкский пр., д.49, лит.А</location>
+    </classes1>
+    <classes2>
+      <time>11:40-13:10</time>
+      <subject>История России и мира в ХХ веке (лекция)</subject>
+      <location>Ауд. Lemon Classroom (1419), Кронверкский пр., д.49, лит.А</location>
+    </classes2>
+  </classes>
+</schedule>
