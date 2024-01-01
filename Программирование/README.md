@@ -1,4 +1,11 @@
 # О предмете
+
+## Оглавление
+1. [Общая информация](#info)
+2. [Рубежки](#rubez)
+3. [Лабы](#labs)
+
+## Общая информация <a name="info"></a>
 Лектор и практик: Письмак Алексей Евгеньевич
 
 [Журнал успеваемости потока 2023-24 учебного года 1 семестра](https://docs.google.com/spreadsheets/d/1dMRvYwRp3Lhy6IT5mbjdaplId9xB99b_9NijSpF7iJI/edit#gid=2120352098)
@@ -8,14 +15,14 @@
 
 ![](https://i.imgur.com/1S6nxuu.gif)
 
-## Рубежки
+## Рубежки <a name="rubez"></a>
 
-![](https://i.imgur.com/JTfHMx1.jpg)
+![](https://i.imgur.com/WtM3fSA.jpg)
 
 Вопросы из года в год повторяются, поэтому советую посмотреть [самые популярные](./Рубежки/)
 
-## Лабы
-[Здесь](https://github.com/exception-s/course1) очень хорошо расписана теория для сдачи 2-4 лабы
+## Лабы <a name="labs"></a>
+[Здесь очень хорошо расписана теория для сдачи 2-4 лабы](https://github.com/exception-s/course1) 
 
 <details>
 <summary><h2>1 лаба</h2></summary>
