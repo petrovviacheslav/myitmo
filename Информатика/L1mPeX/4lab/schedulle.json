@@ -1,0 +1,22 @@
+{
+    "Th": {
+        "AFK and exercise therapy (Practice)": {
+            "Starts": "08:20",
+            "Ends": "09:50",
+            "Teacher": "Platonova Valentina Aleksandrovna",
+            "Place": "room Борцовский зал (4506/1) ul. Lomonosova, d.9, lit. B"
+        },
+        "History of Russian science and technology (Lecture)": {
+            "Starts": "11:40",
+            "Ends": "13:10",
+            "Teacher": "Vasilyev Andrey Vladimirovich",
+            "Place": "room 1404 Kronverksky pr., d.49, lit.A"
+        },
+        "History of Russian science and technology (Practice)": {
+            "Starts": "15:20",
+            "Ends": "16:50",
+            "Teacher": "Vasilyev Andrey Vladimirovich",
+            "Place": "room 2430 Kronverksky pr., d.49, lit.A"
+        }
+    }
+}
