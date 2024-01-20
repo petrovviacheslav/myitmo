@@ -1,5 +1,5 @@
 package actions;
-public enum Speech {
+public class Speech extends Enum {
     Tell,
     Ask
 }

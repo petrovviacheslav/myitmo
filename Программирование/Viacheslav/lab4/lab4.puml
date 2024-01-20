@@ -178,7 +178,8 @@ class NothingSayError {
     +NothingSayError(errorMessage : String) : void
 }
 }
-
+RuntimeException <|- NameError
+Exception <|- NothingSayError
 
 Talkable <|-- Character
 
@@ -195,8 +196,7 @@ Sound +-- Decription
 River +-- Condition
 Tiger +-- Title
 
-RuntimeException <|- NameError
-Exception <|- NothingSayError
+
 
 Perceptionable <|-- Person
 Lookable <|-- Person
