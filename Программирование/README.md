@@ -22,6 +22,8 @@
 
 Вопросы из года в год повторяются, поэтому советую посмотреть [самые популярные](./Рубежки/)
 
+Также есть разбор рубежек первого семестра от Ценекова - [1 рубежка](https://www.youtube.com/watch?v=mDfz0MojoM4) + [miro](https://www.youtube.com/watch?v=mDfz0MojoM4) и [2 рубежка](https://www.youtube.com/watch?v=bZP948U9VTw) + [miro](https://miro.com/app/board/uXjVP4NqLxI=/)
+
 ## Лабы <a name="labs"></a>
 [Здесь очень хорошо расписана теория для сдачи 2-4 лабы](https://github.com/exception-s/course1) 
 

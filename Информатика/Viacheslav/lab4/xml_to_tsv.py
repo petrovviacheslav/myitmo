@@ -3,7 +3,7 @@ import re
 f2 = open("finish.tsv", "w", encoding="utf-8")
 
 
-def create_yaml(file):
+def create_tsv(file):
     to_one_str_file = "".join(line.strip() for line in file.split("\n"))
 
     main_tag, text_in, text_out = divide(to_one_str_file)
@@ -12,7 +12,7 @@ def create_yaml(file):
     dividing_tag, text_in, text_out = divide(to_one_str_file)
     waiting_tags = to_arr_tags(to_one_str_file, dividing_tag)
     for elem in re.findall(re.compile(rf"<{dividing_tag}>(.*?)</{dividing_tag}>"), to_one_str_file):
-        convert_to_yaml(elem, waiting_tags)
+        convert_to_tsv(elem, waiting_tags)
 
 
 def to_arr_tags(line, dividing_tag):
@@ -32,7 +32,7 @@ def to_arr_tags(line, dividing_tag):
     return waiting_tags
 
 
-def convert_to_yaml(line, waiting_tags):
+def convert_to_tsv(line, waiting_tags):
     tag, text_in, text_out = divide(line)
     in_check_tag, out_check_tag = check_tag(text_in), check_tag(text_out)
 
@@ -41,7 +41,7 @@ def convert_to_yaml(line, waiting_tags):
             print(text_in, file=f2)
         elif out_check_tag:
             print(text_in + "\t", end="", file=f2)
-            convert_to_yaml(text_out, waiting_tags)
+            convert_to_tsv(text_out, waiting_tags)
     else:
         info_in = re.findall(r"<\w*>(.*?)</\w*>", text_in)
         for i in range(len(info_in)):
@@ -53,7 +53,7 @@ def convert_to_yaml(line, waiting_tags):
             else:
                 print(info_in[i] + "|", end="", file=f2)
         if out_check_tag:
-            convert_to_yaml(text_out, waiting_tags)
+            convert_to_tsv(text_out, waiting_tags)
 
 
 def divide(line):
@@ -77,7 +77,7 @@ def find_info_in_tag(tag, line):
 
 def start():
     with open("start.xml", "r", encoding="utf-8") as f:
-        create_yaml(f.read())
+        create_tsv(f.read())
 
 
 start()
