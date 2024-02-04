@@ -48,8 +48,13 @@
 
 [![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-Проект доступен с открытым исходным кодом на условиях [Лицензии CC BY-NC-SA 4.0](./LICENSE).
-*Авторские права 2024 Вячеслав Петров и Андрей Казарин*
+Проект доступен с открытым исходным кодом на условиях [Лицензии CC BY-NC-SA 4.0](./LICENSE).<br>
+*Авторские права 2024 Вячеслав Петров и Андрей Казарин*<br>
+
+<a href="https://github.com/L1mPeX/itmo-vt/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=L1mPeX/itmo-vt" />
+</a><br>
+
 
 ## Заключение <a name="conclusion"></a>
 
