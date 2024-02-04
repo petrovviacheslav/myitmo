@@ -1,0 +1,6 @@
+#!/bin/sh
+
+export CLASSPATH=./lib/Pokemon.jar:./src:./src/Moves./src/Pokemons./src/Main
+javac -d bin src/Main.java
+jar cfm Main.jar MANIFEST.MF -C bin . -C lib Pokemon.jar
+

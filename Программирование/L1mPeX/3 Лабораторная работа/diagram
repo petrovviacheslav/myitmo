@@ -1,0 +1,98 @@
+@startuml
+
+package lab3 {
+
+package lab3.Creatures {
+
+abstract class Character
+{
+    -name : String
+    +getName() : String
+}
+
+class Neznayka
+{
+    -balance : int
+    +sit() : void
+    +stroke(forWho : Character) : void
+    +pay(forWho : Worker, howMuch: int) : void
+    +getSalary() : void
+    +canPay(howMuch : int) : bool
+    +goAway() : void
+    +follow(byWho : Creatures) : void
+    +equals(obj : Object) : bool
+    +toString() : String
+    +hashCode() : int
+}
+
+class Worker
+{
+    +follow(byWho : Creatures) : void
+    +say(what : String) : void
+    +setTax(forWho: Character, forWhat: Services, <howMuch: int) : void
+    +write(what : String) : void
+    +equals(obj : Object) : bool
+    +toString() : String
+    +hashCode() : int
+@enduml
+
+class Housemade {
+  +follow(byWho : Creatures) : void
+}
+
+class Dog
+{
+  +bark() : void
+  +stroked(byWho : Character) : void
+  +equals(obj : Object) : bool
+  +toString() : String
+  +hashCode() : int
+}
+
+}
+package InanimateCreatures {
+enum Services {
+  SellPromotions,
+  BuyPromotions
+}
+class Company
+{
+  +provideServices(forWho: Person) : void
+}
+
+class Book {
+  -text : String
+  +addText(text : String) : void
+}
+}
+
+package Interfaces {
+interface Writeable {
+    +beWrittenDown(byWhat : String) : void
+}
+
+interface Talkable {
+    +say(message : String) : void
+}
+
+interface Followable {
+    +folowBy(who : Creatures) : void
+}
+
+interface Strokeable {
++beStroked(byWho : Creatures) : void
+}
+
+}
+
+
+Character <|-- Neznayka
+Character <|-- Worker
+Character <|-- Housemade
+Strokeable <|-- Dog
+Talkable <|-- Character
+Followable <|-- Character
+Writeable <|-- Book
+
+
+@enduml
