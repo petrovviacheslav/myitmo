@@ -20,6 +20,9 @@
 
 ![](https://i.imgur.com/WtM3fSA.jpg)
 
+> результаты будут СВОЕВРЕМЕННО
+> ©️ А. Е. Письмак
+
 Вопросы из года в год повторяются, поэтому советую посмотреть [самые популярные](./Рубежки/)
 
 Также есть разбор рубежек первого семестра от Ценекова - [1 рубежка](https://www.youtube.com/watch?v=mDfz0MojoM4) + [miro](https://www.youtube.com/watch?v=mDfz0MojoM4) и [2 рубежка](https://www.youtube.com/watch?v=bZP948U9VTw) + [miro](https://miro.com/app/board/uXjVP4NqLxI=/)
@@ -109,5 +112,13 @@ Uml лучше всего писать в IntelliJ IDEA Ultimate ([получи�
 
 Для сдачи/выполнения:
 - [теория](https://github.com/exception-s/course1?tab=readme-ov-file#%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-4)
+
+</details>
+
+<details>
+<summary><h2>5 лаба</h2></summary>
+
+Для сдачи/выполнения:
+- [гайд от Ценекова](https://vk.com/@dim0n4eg-laboratornye-5-8-po-programmirovaniu-ili-kak-sekonomit-10k)
 
 </details>

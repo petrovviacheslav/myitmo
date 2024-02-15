@@ -40,6 +40,7 @@
 | [Black Rider](https://github.com/eliteSufferer/ITMO_Studies), [kamil](https://github.com/pro100kamil/itmo/), [belovlaska](https://github.com/belovlaska/itmo), [CodeAxeAttacks](https://github.com/CodeAxeAttacks/SystemApplicationSoftware-09.03.04-ITMO), [VeraKasianenko](https://github.com/VeraKasianenko/ITMO_Software_engineering) | Репозитории других ребят (поступили в 2022) |
 | [Vaneshik](https://github.com/Vaneshik/VT-Labs), [bilyardvmetro](https://github.com/bilyardvmetro/ITMO-System-Application-Software)                                                                                                                                                                                                       | Репозитории других ребят (поступили в 2023) |
 | [MakeCheerfulUpload](https://github.com/orgs/MakeCheerfulUpload/repositories)                                                                                                                                                                                                                                                             | Сборник работ 1 сема                        |
+| https://rosroble.github.io/                                                                                                                                                                                                                                                                                                               | Конспекты к лабам                           |
 | https://picloud.pw/cloud/                                                                                                                                                                                                                                                                                                                 | Хранилище работ до 2020 года                |
 
 Спасибо всем тем, на кого указаны ссылки здесь и также в других папках.
@@ -54,7 +55,6 @@
 <a href="https://github.com/L1mPeX/itmo-vt/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=L1mPeX/itmo-vt" />
 </a><br>
-
 
 ## Заключение <a name="conclusion"></a>
 
