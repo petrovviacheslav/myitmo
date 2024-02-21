@@ -1,2 +1,5 @@
 # на будущее (мб прога 5-8)
 
+[submodule "Programming/Viacheslav/lab5"]
+	path = Programming/Viacheslav/lab5
+	url = https://github.com/sub-myitmo/lab5-java

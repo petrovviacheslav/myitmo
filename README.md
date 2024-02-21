@@ -27,6 +27,8 @@
 
 Будьте осторожны, возможны ошибки и неточности!
 
+Пояснение к папкам Viacheslav и Limpex - в каждой такой папке лежат лабы Вячеслава и Андрея
+
 ## Лекторы / практики <a name="teachers"></a>
 
 [Гугл таблица с отзывами на преподов](https://docs.google.com/spreadsheets/d/1TFTOKxqml1agwgo6Vp0Ql6Rgj9f9ciyOqQPF8VvUkJQ/edit#gid=591156939)
@@ -39,6 +41,7 @@
 | [RedGry](https://github.com/RedGry/ITMO), [EgorMIt](https://github.com/EgorMIt/ITMO), [RomanVassilchenko](https://github.com/RomanVassilchenko/ITMOProjects), [maxbarsukov](https://github.com/maxbarsukov/itmo)                                                                                                                          | Популярные репозитории с работами           |
 | [Black Rider](https://github.com/eliteSufferer/ITMO_Studies), [kamil](https://github.com/pro100kamil/itmo/), [belovlaska](https://github.com/belovlaska/itmo), [CodeAxeAttacks](https://github.com/CodeAxeAttacks/SystemApplicationSoftware-09.03.04-ITMO), [VeraKasianenko](https://github.com/VeraKasianenko/ITMO_Software_engineering) | Репозитории других ребят (поступили в 2022) |
 | [Vaneshik](https://github.com/Vaneshik/VT-Labs), [bilyardvmetro](https://github.com/bilyardvmetro/ITMO-System-Application-Software)                                                                                                                                                                                                       | Репозитории других ребят (поступили в 2023) |
+| https://205826.github.io                                                                                                                                                                                                                                                                                                                  | Легенда                                     |
 | [MakeCheerfulUpload](https://github.com/orgs/MakeCheerfulUpload/repositories)                                                                                                                                                                                                                                                             | Сборник работ 1 сема                        |
 | https://rosroble.github.io/                                                                                                                                                                                                                                                                                                               | Конспекты к лабам                           |
 | https://picloud.pw/cloud/                                                                                                                                                                                                                                                                                                                 | Хранилище работ до 2020 года                |
