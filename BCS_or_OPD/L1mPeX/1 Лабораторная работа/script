@@ -1,0 +1,129 @@
+#!/bin/bash
+
+
+# Создадим главную директорию
+mkdir lab0
+
+
+# Создадим ещё несколько папок и файлов
+touch lab0/furret4
+mkdir lab0/gorebyss0
+mkdir lab0/gurdurr8
+touch lab0/mienshao7
+mkdir lab0/staraptor1
+touch lab0/vileplume8
+
+
+# Теперь у нас есть файлы и папки, но они пустые - заполним их
+
+
+# Сначала заполним файлы
+echo "Тип диеты Herbivore" > lab0/furret4
+echo "Тип покемона FIGHTING NONE" > lab0/mienshao7
+echo "Живет Forest Grassland Marsh Rainforest" > lab0/vileplume8
+
+
+# Теперь заполним папки 
+touch lab0/gorebyss0/umbreon 
+touch lab0/gorebyss0/karrablast
+touch lab0/gorebyss0/lumineon
+mkdir lab0/gorebyss0/gigalith
+touch lab0/gorebyss0/watchog
+touch lab0/gorebyss0/porygon
+
+touch lab0/gurdurr8/weepinbell
+mkdir lab0/gurdurr8/galvantula
+mkdir lab0/gurdurr8/gothitelle
+mkdir lab0/gurdurr8/scolipede
+mkdir lab0/gurdurr8/diglett
+
+mkdir lab0/staraptor1/altaria
+touch lab0/staraptor1/shelmet
+mkdir lab0/staraptor1/salamence
+mkdir lab0/staraptor1/umbreon
+touch lab0/staraptor1/cascoon
+
+
+# Теперь снова заполним файлы текстом
+echo "Возможности Overland=8 Surface=6 Jump=4 Power=2 Intelligence=4 Tracker=0 Stealth=0" > lab0/gorebyss0/umbreon
+echo "Ходы Bug Bite Giga Drain Iron Defence Knock Off Sleep Talk Snore" > lab0/gorebyss0/karrablast
+echo "weight=52.9 height=47.0 atk=7 def=8" > lab0/gorebyss0/lumineon
+echo "satk=6 sdef=7 spd=8" > lab0/gorebyss0/watchog
+
+echo "Живет Cave Forest" > lab0/gurdurr8/weepinbell
+
+echo "Тип покемона FIGHTING NONE" > lab0/mienshao7
+
+echo "Возможности Overland=2 Surface=3 Underwater=3 Jump=1" > lab0/staraptor1/shelmet
+echo "Спобоности harder" > lab0/staraptor1/cascoon
+
+echo "Живет Forest Grassland Marsh Rainforest" > lab0/vileplume8
+
+
+# Теперь надо настроить права доступа 
+
+# Number	Permission Type 	Symbol
+# 0		No Permission 		—
+# 1 		Execute 		–x
+# 2 		Write 			-w-
+# 3 		Execute + Write 	-wx
+# 4 		Read 			r–
+# 5	 	Read + Execute 		r-x
+# 6 		Read + Write 		rw-
+# 7 		Read + Write +Execute 	rwx
+chmod 060 lab0/furret4
+chmod 750 lab0/gorebyss0
+chmod 006 lab0/gorebyss0/umbreon
+chmod 664 lab0/gorebyss0/karrablast
+chmod 644 lab0/gorebyss0/lumineon
+chmod 576 lab0/gorebyss0/gigalith
+chmod 640 lab0/gorebyss0/watchog
+chmod 753 lab0/gorebyss0/porygon
+chmod 311 lab0/gurdurr8
+chmod 444 lab0/gurdurr8/weepinbell
+chmod 371 lab0/gurdurr8/galvantula
+chmod 373 lab0/gurdurr8/scolipede
+chmod 755 lab0/gurdurr8/diglett
+chmod 004 lab0/mienshao7
+chmod 577 lab0/staraptor1
+chmod 700 lab0/staraptor1/altaria
+chmod 640 lab0/staraptor1/shelmet
+chmod 353 lab0/staraptor1/salamence
+chmod 357 lab0/staraptor1/umbreon
+chmod 620 lab0/staraptor1/cascoon
+chmod 622 lab0/vileplume8
+
+
+# Копируем части дерева и создаем ссылки
+cp lab0/furret4 lab0/gurdurr8/scolipede
+cat lab0/staraptor1/shelmet lab0/gorebyss0/watchog > lab0/furret4_82
+ln lab0/vileplume8 lab0/gorebyss0/lumineonvileplume
+ln -s lab0/staraptor1 lab0/Copy_46
+cat lab0/vileplume8 > lab0/gurdurr8/weepinbellvileplume 
+cp -r lab0/gorebyss0 lab0/gurdurr8/galvantula
+ln -s lab0/vileplume8 lab0/gorebyss0/karrablastvileplume
+
+
+# Ищем и фильтруем
+for fpath in lab0/gorebyss0/umbreon lab0/gorebyss0/karrablast lab0/gorebyss0/lumineon lab0/gorebyss0/watchog lab0/gurdurr8/weepinbell
+do
+       	wc -l $fpath >> /tmp/script.out 2>> /tmp/script.errors 
+done
+
+ls -Rla lab0/ 2>> /tmp/script.errors | grep -P '^-' | sort -k6 -k7 -k8 | tail -2 | grep -o -P ' [^ ]*$'
+
+walk() {
+    for fname in $(ls -1 -a $1); do
+        if ls -l $1/$fname 2> /dev/null | grep -Pq '^d'; then
+            if [[ $fname != '.' ]] && [[ $fname != '..' ]]; then
+                walk $1/$fname
+            fi
+        else
+            echo -n $1/./$fname | grep -P '8$'
+        fi
+    done
+}
+
+cat $(walk ./lab0 | sort -t $'/./' -k 2) 2> /dev/null || :
+
+ls -Rla lab0/ 2>> /tmp/script.errors | grep -P '^-' | grep -P 'la' | sort -k6 -k7 -k8 | tail -4 | grep -o -P ' [^ ]*$'

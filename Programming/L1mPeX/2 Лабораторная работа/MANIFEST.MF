@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path: lib/Pokemon.jar
+Main-Class: Main

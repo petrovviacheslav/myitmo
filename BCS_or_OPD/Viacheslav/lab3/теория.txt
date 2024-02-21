@@ -1,0 +1,56 @@
+Команда LOOP (КОП - 8): Execution:
+DR-1 -> DR
+DR -> MEM(AR), DR-1 -> BR
+if BR(15) = 0: break; IP + 1 -> IP
+JUMP (КОП - С): Execution: DR -> IP
+
+BEQ (или любая аналогичная, первые 2 разряда - F + что-то): Execution (если Z = 0):
+CR (0-7)-> BR
+BR + IP -> IP
+
+
+Косвенная автоинкрементная (режим - А):
+Address fetch:
+CR (0-7) -> BR
+BR + IP -> AR
+AR -> DR
+DR + 1 -> DR
+DR -> MEM(AR) (RAM)
+DR - 1 -> DR
+Operand fetch:
+DR -> AR
+AR -> DR
+
+
+Косвенная автодекрементная (режим - В):
+Address fetch:
+CR (0-7) -> BR
+BR + IP -> AR
+AR -> DR
+DR - 1 -> DR
+DR -> MEM(AR)
+Operand fetch:
+DR -> AR
+AR -> DR
+
+Прямая загрузка операнда (Режим - F):
+Address fetch:
+CR (0-7) -> BR
+BR -> DR
+
+Прямая относительная загрузка (режим - E):
+Address fetch:
+CR (0-7) -> BR
+BR + IP -> DR
+Operand fetch:
+DR -> AR
+AR -> DR
+
+Косвенная относительная (режим - 8):
+Address fetch:
+CR (0-7) -> BR
+BR + IP -> AR
+AR -> DR
+Operand fetch:
+DR -> AR
+AR -> DR

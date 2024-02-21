@@ -1,0 +1,22 @@
+{
+    "We": {
+        "Programming (Lecture)": {
+            "Starts": "10:00",
+            "Ends": "11:30",
+            "Teacher": "Pismak Aleksey Evgenyevich",
+            "Place": "room Актовый зал (1216/0 (усл)) ul. Lomonosova, d.9, lit.M"
+        },
+        "AFK and exercise therapy (Sport)": {
+            "Starts": "11:40",
+            "Ends": "13:10",
+            "Teacher": "Platonova Valentina Aleksandrovna",
+            "Place": "room Борцовский зал (4506/1) ul. Lomonosova, d.9, lit. B"
+        },
+        "The reservation of the room (Consultation)": {
+            "Starts": "14:30",
+            "Ends": "16:50",
+            "Teacher": "Kazarin Andrey Maksimovich",
+            "Place": "room Переговорная 5 (1303/5) ul. Lomonosova, d.9, lit.M"
+        }
+    }
+}
