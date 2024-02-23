@@ -27,9 +27,26 @@
 
 Будьте осторожны, возможны ошибки и неточности!
 
-Пояснение к папкам Viacheslav и Limpex - в каждой такой папке лежат лабы Вячеслава и Андрея
+Пояснение к папкам Viacheslav и Limpex - в каждой такой папке лежат лабы двух разных людей
 
-## Лекторы / практики <a name="teachers"></a>
+<details>
+<summary><h3>Пояснения к названиям папок</h3></summary>
+
+- BCS/OPD - ОПД - Основы профессиональной деятельности
+- Databases - бд - Базы данных
+- Discra-base - Дискретная математика (базовый уровень)
+- History - История
+- Informatics - Информатика
+- Kik - коммуникации и командообразование
+- Life_safety - бжд - Безопасность жизнедеятельности
+- Linal-base - Линейная алгебра (базовый уровень)
+- Matan-base - Математический анализ (базовый уровень)
+- Programming - Программирование (на java)
+- 1/2 term - 1/2 семестр
+
+</details>
+
+## Лекторы / практики  <a name="teachers"></a>
 
 [Гугл таблица с отзывами на преподов](https://docs.google.com/spreadsheets/d/1TFTOKxqml1agwgo6Vp0Ql6Rgj9f9ciyOqQPF8VvUkJQ/edit#gid=591156939)
 
@@ -38,7 +55,7 @@
 | Полезность                                                                                                                                                                                                                                                                                                                                | Описание                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
 | [Гайд для перваков](https://github.com/Imtjl/1st-year-guide)                                                                                                                                                                                                                                                                              | Просто офигенный гайд                       |
-| [RedGry](https://github.com/RedGry/ITMO), [EgorMIt](https://github.com/EgorMIt/ITMO), [RomanVassilchenko](https://github.com/RomanVassilchenko/ITMOProjects), [maxbarsukov](https://github.com/maxbarsukov/itmo)                                                                                                                          | Популярные репозитории с работами           |
+| [RedGry](https://github.com/RedGry/ITMO), [EgorMIt](https://github.com/EgorMIt/ITMO), [maxbarsukov](https://github.com/maxbarsukov/itmo), [RomanVassilchenko](https://github.com/RomanVassilchenko/ITMOProjects)                                                                                                                          | Популярные репозитории с работами           |
 | [Black Rider](https://github.com/eliteSufferer/ITMO_Studies), [kamil](https://github.com/pro100kamil/itmo/), [belovlaska](https://github.com/belovlaska/itmo), [CodeAxeAttacks](https://github.com/CodeAxeAttacks/SystemApplicationSoftware-09.03.04-ITMO), [VeraKasianenko](https://github.com/VeraKasianenko/ITMO_Software_engineering) | Репозитории других ребят (поступили в 2022) |
 | [Vaneshik](https://github.com/Vaneshik/VT-Labs), [bilyardvmetro](https://github.com/bilyardvmetro/ITMO-System-Application-Software)                                                                                                                                                                                                       | Репозитории других ребят (поступили в 2023) |
 | https://205826.github.io                                                                                                                                                                                                                                                                                                                  | Легенда                                     |
