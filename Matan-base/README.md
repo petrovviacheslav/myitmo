@@ -10,8 +10,8 @@
 ## 1 семестр
 
 Коллоки (cпасибо Илье из какого-то тг чата):
-1. [Расписанные билеты 1 коллока](https://disk.yandex.ru/d/4buhC9AeNkqRqA)
-2. [Расписанные билеты 2 коллока](https://disk.yandex.ru/i/bJikRg6WH66Maw)
+1. [Расписанные билеты 2 коллока](https://disk.yandex.ru/d/4buhC9AeNkqRqA)
+2. [Расписанные билеты 3 коллока](https://disk.yandex.ru/i/bJikRg6WH66Maw)
 
 ## 2 семестр
 
