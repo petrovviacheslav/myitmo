@@ -1,8 +1,6 @@
 ﻿.idea/
 .venv/
 
-how-to-choose-a-teacher2.md
-
 **/*.iml
 **/**/*.iml
 **/**/**/*.iml
