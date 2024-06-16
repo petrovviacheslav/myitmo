@@ -55,8 +55,97 @@
 5. Пролистайте третью часть презентации, особенно в части до подпрограмм, там есть подходы, которые могут пригодится.
 6. Вспомните про тупоконечников и остроконечников. Подумайте как делать в БЭВМ операции с 32-х разрядными числами -> low endian big endian
 
-[](https://i.imgur.com/nvfO5L3.jpg)
+<details>
+<summary>Примеры</summary>
 
+````
+ORG 0x100
+
+ARR_START: WORD $ARR
+ARR_END: WORD 0
+ARR_LENGTH: WORD 18
+SMASK: WORD 0x0020
+RES_H: WORD 0x0
+RES_L: WORD 0x0
+
+CUR_H: WORD 0x0
+CUR_L: WORD 0x0
+
+CUR_ADR: WORD 0x0
+
+START:
+CLA
+ST RES_H
+ST RES_L
+
+LD ARR_START
+ST CUR_ADR
+
+ADD ARR_LENGTH
+ADD ARR_LENGTH
+ST ARR_END
+
+MAIN_LOOP:
+LD (CUR_ADR)+
+ST CUR_H
+LD (CUR_ADR)
+ST CUR_L
+
+LD CUR_ADR
+DEC
+ADD #6
+ST CUR_ADR
+
+LD CUR_H
+AND SMASK
+BZS POS
+NEG
+OR CUR_H
+POS:
+ST CUR_H
+
+LD CUR_L
+ADD RES_L
+ST RES_L
+CALL SIGN_CHECK
+LD RES_H
+ADD CUR_H
+LD CUR_ADR
+CMP ARR_END
+BGE STOP
+JUMP MAIN_LOOP
+STOP:
+HLT
+
+SIGN_CHECK:
+LD CUR_L
+BMI NEGATIVE
+POSITIVE:
+LD RES_H
+ADC #0
+ST RES_H
+RET
+NEGATIVE:
+LD RES_H
+ADC #-1
+ST RES_H
+RET
+
+
+ORG 0x6D2
+ARR:
+````
+![](https://i.imgur.com/G3ktdDe.jpg)
+
+
+У меня был очень похожий вариант, я сделал по другому, вот код:
+````
+````
+
+Другие коды, которые разбирались до рубежки, то есть ребята сами придумывали задание, а потом реализовывали его (мне это очень помогло подготовиться):
+````
+````
+</details>
 2 вариант - трассировка микрокода
 
 ## Лабы <a name="labs"></a>
@@ -121,6 +210,5 @@
 
 ## Экзамен <a name="exam"></a>
 
-[](https://i.imgur.com/nvfO5L3.jpg)
+![](https://i.imgur.com/nvfO5L3.jpg)
 
-[](https://i.imgur.com/wXcVk2q.jpg)

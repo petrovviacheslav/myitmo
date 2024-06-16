@@ -22,3 +22,7 @@
 
 - [Решатор 1-3 дз](https://github.com/pro100kamil/itmo/tree/master/labs/dm/%D1%80%D0%B5%D1%88%D0%B0%D0%BB%D0%BA%D0%B8%20%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D1%8B)
 - [Решаторы на некоторые дз](https://band-of-four.github.io/discrete-math-homework-second-term/#/)
+- [Гайды на решаторы и курсач](https://www.youtube.com/@imfrizyy/videos)
+
+![](https://i.imgur.com/ip1Q3wM.jpg)
+> занимательная вещь
