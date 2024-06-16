@@ -1,0 +1,489 @@
+ORG 0x100
+START: IN 0x1D ; запрос данных с цифровой клавиатуры
+AND #0x40
+BEQ START
+IN 0x1C
+ST (ADRC)+
+LOOP COUNTER
+JUMP START
+
+LD 0x2 ; проверка 3 символа (обязательно точка)
+CMP #0xE
+BNE ERROR
+LD 0x0 ; проверка 1 символа (0-9)
+CMP #0xA
+BGE ERROR
+LD 0x1 ; проверка 2 символа (0-9)
+CMP #0xA
+BGE ERROR
+LD 0x3 ; проверка 4 символа (0-9)
+CMP #0xA
+BGE ERROR
+LD 0x4 ; проверка 5 символа (0-9)
+CMP #0xA
+BGE ERROR
+
+LD #0x0 ; устанавливаем адрес для обращения к числу
+ST ADRC
+
+FINDD: LD (ADRC)+ ; ищем кол-во десятков
+ST FLAGZERO ; загружаем кол-во десятков в переменную
+CMP #0x1
+BNE BASE
+LD (ADRC)
+CMP #0x0
+BEQ BASE ; если число не 11-19, то прыгаем на BASE
+
+SPEC: LD (ADRC)+ ; вывод чисел 11-19
+ASL
+ASL
+ASL
+ASL
+ST FLAGPAD ; загрузка какого-то числа, чтобы позже не менять падеж у килограмм/грамм
+ADD HELPS ; +500 к памяти
+ST TEMPS
+PRINTSC: IN 0x0D     ; вывод числа 11-19
+AND #0x40
+BEQ PRINTSC
+LD (TEMPS)+
+CMP #0x0
+BEQ NEXT
+OUT 0x0C
+JUMP PRINTSC
+
+; тут нет исполнения, все вспомогательные штуки здесь,
+; т.к. у нас относительная адресация и сноски работают от -127 до 128
+COUNTER: WORD 0x5; счётчик для кк.гг
+ADRC: WORD 0x0; адрес для записи, а потом чтения
+ADRE: WORD 0x10; вывести слово ошибка
+ADR: WORD 0x600 ; адрес для слова килограмм/грамм
+TEMPD: WORD 0x300 ; для десятков
+HELPD: WORD 0x300
+TEMPE: WORD 0x400 ; для единиц
+HELPE: WORD 0x400
+TEMPS: WORD 0x500 ; число (11-19)
+HELPS: WORD 0x500
+FLAG: WORD 0x2 ; флаг для количества вводимых чисел
+PADEZ: WORD 0x1 ; адрес цифры, по которой определяется падеж
+FLAGPAD: WORD 0x0 ;если не 0, то было число 11-19
+FLAGZERO: WORD 0x0 ; переменная для проверки десятков на 0
+
+ERROR: IN 0x0D  ; выводим слово ошибка     
+AND #0x40
+BEQ ERROR
+LD (ADRE)+
+CMP #0x0
+BEQ FINISH
+OUT 0x0C
+JUMP ERROR
+
+BASE: ASL ; вывод десятков, если не 11-19
+ASL
+ASL
+ASL
+ADD HELPD ; +300 к памяти
+ST TEMPD
+PRINTDC: IN 0x0D ; вывод слова циклом
+AND #0x40
+BEQ PRINTDC
+LD (TEMPD)+
+CMP #0x0
+BEQ FINDE
+OUT 0x0C
+JUMP PRINTDC
+
+FINDE: LD (ADRC)+ ; ищем кол-во единиц
+CMP #0x0
+BNE CONTIN ; если не 0, то нормальное исполнение
+OR FLAGZERO ; посмотрим, может число 00
+CMP #0x0
+BNE NEXT ; если число 10 или 20 ..., то прыгаем на NEXT
+CONTIN: ASL
+ASL
+ASL
+ASL
+ADD HELPE
+ST TEMPE
+PRINTEC: IN 0x0D ; выводим кол-в единиц циклом
+AND #0x40
+BEQ PRINTEC
+LD (TEMPE)+
+CMP #0x0
+BEQ NEXT
+OUT 0x0C
+JUMP PRINTEC
+
+NEXT: LD #0x0
+ST FLAGZERO ; зануляем флаг с количеством десятков
+LD (ADRC)+ ; скипаем символ "точка"
+
+PRINT: IN 0x0D ;вывод слова "килограмм"/"грамм"
+AND #0x40
+BEQ PRINT
+LD (ADR)+
+CMP #0x0
+BEQ PRINT_NEXT
+OUT 0x0C
+JUMP PRINT
+
+; вывести А при необходимости
+PRINT_NEXT: LD FLAGPAD 
+CMP #0x0
+BNE CONT ; если было число 11-19, то скипем шаг с падежом
+LD (PADEZ) ; загружаем вторую цифру числа
+CMP #0x2 ; < 2 -> не выводим А
+BLT CONT
+CMP #0x5 ; >= 5 -> не выводим А
+BGE CONT
+CALL LET_A ; вывод А
+CONT: LD #0x0 
+ST FLAGPAD ; зануляем FLAGPAD
+LD PADEZ
+ADD #0x3
+ST PADEZ ; в следующий раз обратимся к последней цифре другого числа
+
+CALL SPACE
+LOOP FLAG
+JUMP FINDD
+FINISH: HLT
+
+LET_A: IN 0x0D ; вывод буквы "А"      
+AND #0x40
+BEQ LET_A
+LD #0xB0
+OUT 0x0C
+RET
+
+SPACE: IN 0x0D ; вывод символа пробел     
+AND #0x40
+BEQ LET_A
+LD #0x20
+OUT 0x0C
+RET
+
+ORG 0x10
+WORD 0xBE ;о
+WORD 0xC8 ;ш
+WORD 0xB8 ;и
+WORD 0xB1 ;б
+WORD 0xBA ;к
+WORD 0xB0 ;а
+
+ORG 0x310
+WORD 0xB4 ;д
+WORD 0xB5 ;е
+WORD 0xC1 ;с
+WORD 0xCF ;я
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x320
+WORD 0xB4 ;д
+WORD 0xB2 ;в
+WORD 0xB0 ;а
+WORD 0xB4 ;д
+WORD 0xC6 ;ц
+WORD 0xB0 ;а
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x330
+WORD 0xC2 ;т
+WORD 0xC0 ;р
+WORD 0xB8 ;и
+WORD 0xB4 ;д
+WORD 0xC6 ;ц
+WORD 0xB0 ;а
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x340
+WORD 0xC1 ;с
+WORD 0xBE ;о
+WORD 0xC0 ;р
+WORD 0xBE ;о
+WORD 0xBA ;к
+WORD 0x20 ; пробел
+
+ORG 0x350
+WORD 0xBF ;п
+WORD 0xCF ;я
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0xB4 ;д
+WORD 0xB5 ;е
+WORD 0xC1 ;с
+WORD 0xCF ;я
+WORD 0xC2 ;т
+WORD 0x20 ; пробел
+
+ORG 0x360
+WORD 0xC8 ;ш
+WORD 0xB5 ;е
+WORD 0xC1 ;с
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0xB4 ;д
+WORD 0xB5 ;е
+WORD 0xC1 ;с
+WORD 0xCF ;я
+WORD 0xC2 ;т
+WORD 0x20 ; пробел
+
+ORG 0x370
+WORD 0xC1 ;с
+WORD 0xB5 ;е
+WORD 0xBC ;м
+WORD 0xCC ;ь
+WORD 0xB4 ;д
+WORD 0xB5 ;е
+WORD 0xC1 ;с
+WORD 0xCF ;я
+WORD 0xC2 ;т
+WORD 0x20 ; пробел
+
+ORG 0x380
+WORD 0xB2 ;в
+WORD 0xBE ;о
+WORD 0xC1 ;с
+WORD 0xB5 ;е
+WORD 0xBC ;м
+WORD 0xCC ;ь
+WORD 0xB4 ;д
+WORD 0xB5 ;е
+WORD 0xC1 ;с
+WORD 0xCF ;я
+WORD 0xC2 ;т
+WORD 0x20 ; пробел
+
+ORG 0x390
+WORD 0xB4 ;д
+WORD 0xB5 ;е
+WORD 0xB2 ;в
+WORD 0xCF ;я
+WORD 0xBD ;н
+WORD 0xBE ;о
+WORD 0xC1 ;с
+WORD 0xC2 ;т
+WORD 0xBE ;о
+WORD 0x20 ; пробел
+
+ORG 0x400
+WORD 0xBD ;н
+WORD 0xBE ;о
+WORD 0xBB ;л
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x410
+WORD 0xBE ;о
+WORD 0xB4 ;д
+WORD 0xB8 ;и
+WORD 0xBD ;н
+WORD 0x20 ; пробел
+
+ORG 0x420
+WORD 0xB4 ;д
+WORD 0xB2 ;в
+WORD 0xB0 ;а
+WORD 0x20 ; пробел
+
+ORG 0x430
+WORD 0xC2 ;т
+WORD 0xC0 ;р
+WORD 0xB8 ;и
+WORD 0x20 ; пробел
+
+ORG 0x440
+WORD 0xC7 ;ч
+WORD 0xB5 ;е
+WORD 0xC2 ;т
+WORD 0xCB ;ы
+WORD 0xC0 ;р
+WORD 0xB5 ;е
+WORD 0x20 ; пробел
+
+ORG 0x450
+WORD 0xBF ;п
+WORD 0xCF ;я
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x460
+WORD 0xC8 ;ш
+WORD 0xB5 ;е
+WORD 0xC1 ;с
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x470
+WORD 0xC1 ;с
+WORD 0xB5 ;е
+WORD 0xBC ;м
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x480
+WORD 0xB2 ;в
+WORD 0xBE ;о
+WORD 0xC1 ;с
+WORD 0xB5 ;е
+WORD 0xBC ;м
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x490
+WORD 0xB4 ;д
+WORD 0xB5 ;е
+WORD 0xB2 ;в
+WORD 0xCF ;я
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x510
+WORD 0xBE ;О
+WORD 0xB4 ;Д
+WORD 0xB8 ;И
+WORD 0xBD ;н
+WORD 0xBD ;н
+WORD 0xB0 ;а
+WORD 0xB4 ;д
+WORD 0xC6 ;ц
+WORD 0xB0 ;а
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x520
+WORD 0xB4 ;д
+WORD 0xB2 ;в
+WORD 0xB5 ;е
+WORD 0xBD ;н
+WORD 0xB0 ;а
+WORD 0xB4 ;д
+WORD 0xC6 ;ц
+WORD 0xB0 ;а
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x530
+WORD 0xC2 ;т
+WORD 0xC0 ;р
+WORD 0xB8 ;и
+WORD 0xBD ;н
+WORD 0xB0 ;а
+WORD 0xB4 ;д
+WORD 0xC6 ;ц
+WORD 0xB0 ;а
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x540
+WORD 0xC7 ;ч
+WORD 0xB5 ;е
+WORD 0xC2 ;т
+WORD 0xCB ;ы
+WORD 0xC0 ;р
+WORD 0xBD ;н
+WORD 0xB0 ;а
+WORD 0xB4 ;д
+WORD 0xC6 ;ц
+WORD 0xB0 ;а
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x550
+WORD 0xBF ;п
+WORD 0xCF ;я
+WORD 0xC2 ;т
+WORD 0xBD ;н
+WORD 0xB0 ;а
+WORD 0xB4 ;д
+WORD 0xC6 ;ц
+WORD 0xB0 ;а
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x560
+WORD 0xC8 ;ш
+WORD 0xB5 ;е
+WORD 0xC1 ;с
+WORD 0xC2 ;т
+WORD 0xBD ;н
+WORD 0xB0 ;а
+WORD 0xB4 ;д
+WORD 0xC6 ;ц
+WORD 0xB0 ;а
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x570
+WORD 0xC1 ;с
+WORD 0xB5 ;е
+WORD 0xBC ;м
+WORD 0xBD ;н
+WORD 0xB0 ;а
+WORD 0xB4 ;д
+WORD 0xC6 ;ц
+WORD 0xB0 ;а
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x580
+WORD 0xB2 ;в
+WORD 0xBE ;о
+WORD 0xC1 ;с
+WORD 0xB5 ;е
+WORD 0xBC ;м
+WORD 0xBD ;н
+WORD 0xB0 ;а
+WORD 0xB4 ;д
+WORD 0xC6 ;ц
+WORD 0xB0 ;а
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x590
+WORD 0xB4 ;д
+WORD 0xB5 ;е
+WORD 0xB2 ;в
+WORD 0xCF ;я
+WORD 0xC2 ;т
+WORD 0xBD ;н
+WORD 0xB0 ;а
+WORD 0xB4 ;д
+WORD 0xC6 ;ц
+WORD 0xB0 ;а
+WORD 0xC2 ;т
+WORD 0xCC ;ь
+WORD 0x20 ; пробел
+
+ORG 0x600
+WORD 0xBA ;к
+WORD 0xB8 ;и
+WORD 0xBB ;л
+WORD 0xBE ;о
+WORD 0xB3 ;г
+WORD 0xC0 ;р
+WORD 0xB0 ;а
+WORD 0xBC ;м
+WORD 0xBC ;м
+WORD 0x0
+WORD 0xB3 ;г
+WORD 0xC0 ;р
+WORD 0xB0 ;а
+WORD 0xBC ;м
+WORD 0xBC ;м
