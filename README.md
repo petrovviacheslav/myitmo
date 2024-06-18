@@ -25,7 +25,6 @@
 <details>
 <summary><b>Пояснения к названиям папок</b></summary>
 
-- Viacheslav и Limpex - в каждой такой папке лежат лабы двух разных людей
 - BCS/OPD - ОПД - Основы профессиональной деятельности
 - Databases - бд - Базы данных
 - Discra-base - Дискретная математика (базовый уровень)
@@ -67,7 +66,7 @@
 *Авторские права 2024 Вячеслав Петров и Андрей Казарин*<br>
 
 <a href="https://github.com/petrovviacheslav/myitmo/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=L1mPeX/itmo-vt" />
+  <img src="https://contrib.rocks/image?repo=petrovviacheslav/myitmo" />
 </a><br>
 
 ## Заключение <a name="conclusion"></a>
