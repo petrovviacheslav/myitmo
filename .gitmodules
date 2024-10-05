@@ -15,3 +15,6 @@
 [submodule "Programming/Labs/lab6"]
 	path = Programming/Labs/lab6
 	url = https://github.com/sub-myitmo/lab6-java.git
+[submodule "Programming/Labs/lab8"]
+	path = Programming/Labs/lab8
+	url = https://github.com/sub-myitmo/lab8-java.git
