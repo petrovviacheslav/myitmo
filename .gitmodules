@@ -1,2 +1,11 @@
 # на будущее (мб прога 5-8)
 
+[submodule "Programming/Labs/lab7"]
+	path = Programming/Labs/lab7
+	url = https://github.com/sub-myitmo/lab7-java.git
+[submodule "Web/Labs/lab1"]
+	path = Web/Labs/lab1
+	url = https://github.com/sub-myitmo/web-1.git
+[submodule "Web/Labs/lab2"]
+	path = Web/Labs/lab2
+	url = https://github.com/sub-myitmo/web-2.git
