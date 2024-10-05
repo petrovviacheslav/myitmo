@@ -9,3 +9,9 @@
 [submodule "Web/Labs/lab2"]
 	path = Web/Labs/lab2
 	url = https://github.com/sub-myitmo/web-2.git
+[submodule "Programming/Labs/lab5"]
+	path = Programming/Labs/lab5
+	url = https://github.com/sub-myitmo/lab5-java.git
+[submodule "Programming/Labs/lab6"]
+	path = Programming/Labs/lab6
+	url = https://github.com/sub-myitmo/lab6-java.git
