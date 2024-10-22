@@ -38,6 +38,8 @@
 - Web - Веб-программирование
 - Physics - Физика
 - ProgLangs - япы - Языки программирования
+- BMS - Business models of the main sectors of the innovative economy - Бизнес-модели основных секторов инновационной
+  экономики
 - 1/2/3/... term - 1/2/3/... семестр
 
 </details>
@@ -53,7 +55,7 @@
 | [Гайд для перваков](https://github.com/Imtjl/1st-year-guide)                                                                                                                                                                                                                                                                              | Просто офигенный гайд                       |
 | [RedGry](https://github.com/RedGry/ITMO), [EgorMIt](https://github.com/EgorMIt/ITMO), [maxbarsukov](https://github.com/maxbarsukov/itmo), [RomanVassilchenko](https://github.com/RomanVassilchenko/ITMOProjects)                                                                                                                          | Популярные репозитории с работами           |
 | [Black Rider](https://github.com/eliteSufferer/ITMO_Studies), [kamil](https://github.com/pro100kamil/itmo/), [belovlaska](https://github.com/belovlaska/itmo), [CodeAxeAttacks](https://github.com/CodeAxeAttacks/SystemApplicationSoftware-09.03.04-ITMO), [VeraKasianenko](https://github.com/VeraKasianenko/ITMO_Software_engineering) | Репозитории других ребят (поступили в 2022) |
-| [Vaneshik](https://github.com/Vaneshik/VT-Labs), [bilyardvmetro](https://github.com/bilyardvmetro/ITMO-System-Application-Software)                                                                                                                                                                                                       | Репозитории других ребят (поступили в 2023) |
+| [bilyardvmetro](https://github.com/bilyardvmetro/ITMO-System-Application-Software)                                                                                                                                                                                                                                                        | Репозитории других ребят (поступили в 2023) |
 | https://205826.github.io                                                                                                                                                                                                                                                                                                                  | Легенда                                     |
 | [MakeCheerfulUpload](https://github.com/orgs/MakeCheerfulUpload/repositories)                                                                                                                                                                                                                                                             | Сборник работ 1 сема                        |
 | https://rosroble.github.io/                                                                                                                                                                                                                                                                                                               | Конспекты к лабам                           |
@@ -69,7 +71,7 @@
 *Авторские права 2024 Вячеслав Петров и Андрей Казарин*<br>
 
 <a href="https://github.com/petrovviacheslav/myitmo/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=petrovviacheslav/myitmo" />
+  <img alt="contributors" src="https://contrib.rocks/image?repo=petrovviacheslav/myitmo" />
 </a><br>
 
 ## Заключение <a name="conclusion"></a>
