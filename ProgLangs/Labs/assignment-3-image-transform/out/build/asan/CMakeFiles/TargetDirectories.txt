@@ -1,0 +1,12 @@
+/home/slava-linux/CLionProjects/assignment-3-image-transform/out/build/asan/CMakeFiles/test.dir
+/home/slava-linux/CLionProjects/assignment-3-image-transform/out/build/asan/CMakeFiles/edit_cache.dir
+/home/slava-linux/CLionProjects/assignment-3-image-transform/out/build/asan/CMakeFiles/rebuild_cache.dir
+/home/slava-linux/CLionProjects/assignment-3-image-transform/out/build/asan/solution/CMakeFiles/image-transform.dir
+/home/slava-linux/CLionProjects/assignment-3-image-transform/out/build/asan/solution/CMakeFiles/test.dir
+/home/slava-linux/CLionProjects/assignment-3-image-transform/out/build/asan/solution/CMakeFiles/edit_cache.dir
+/home/slava-linux/CLionProjects/assignment-3-image-transform/out/build/asan/solution/CMakeFiles/rebuild_cache.dir
+/home/slava-linux/CLionProjects/assignment-3-image-transform/out/build/asan/tester/CMakeFiles/image-matcher.dir
+/home/slava-linux/CLionProjects/assignment-3-image-transform/out/build/asan/tester/CMakeFiles/check.dir
+/home/slava-linux/CLionProjects/assignment-3-image-transform/out/build/asan/tester/CMakeFiles/test.dir
+/home/slava-linux/CLionProjects/assignment-3-image-transform/out/build/asan/tester/CMakeFiles/edit_cache.dir
+/home/slava-linux/CLionProjects/assignment-3-image-transform/out/build/asan/tester/CMakeFiles/rebuild_cache.dir

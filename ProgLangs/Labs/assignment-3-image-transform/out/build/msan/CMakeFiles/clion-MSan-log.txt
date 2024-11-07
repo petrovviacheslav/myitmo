@@ -1,0 +1,12 @@
+/opt/clion-2024.2.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=MSan -DCMAKE_MAKE_PROGRAM=/opt/clion-2024.2.2/bin/ninja/linux/x64/ninja -G Ninja -DCMAKE_BUILD_TYPE=MSan -S /home/slava-linux/CLionProjects/assignment-3-image-transform -B /home/slava-linux/CLionProjects/assignment-3-image-transform/out/build/msan
+-- The C compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+CMake Error at CMakeLists.txt:16 (message):
+  Unexpected build type MSan, possible values: Debug;Release;ASan;LSan;UBSan
+
+
+-- Configuring incomplete, errors occurred!

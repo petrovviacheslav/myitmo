@@ -8,6 +8,8 @@
 
 Также попробуйте - https://t.me/vt_itmo_bot
 
+Организация со множеством моих работ, чтобы не утяжелять этот репозиторий, - https://github.com/sub-myitmo
+
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&width=500&lines=ИТМО+-+институт+тёплых+мужских+отношений)](https://git.io/typing-svg)
 
 ## Оглавление
@@ -40,6 +42,7 @@
 - ProgLangs - япы - Языки программирования
 - BMS - Business models of the main sectors of the innovative economy - Бизнес-модели основных секторов инновационной
   экономики
+- DGVM_DGMA - Дополнительные главы высшей математики / дополнительные главы мат. анализа
 - 1/2/3/... term - 1/2/3/... семестр
 
 </details>
