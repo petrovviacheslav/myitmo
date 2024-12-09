@@ -36,7 +36,8 @@
 Лучше сначала помучаться самому, чтобы потом было легче делать 3 лабу. На моменте "2.3 структуры" становится нихуя не понятно и можно подсматривать здесь - https://github.com/CandyGoose/Courses/tree/main/ITMO_courses/Stepik_C_programming_and_program_execution
 
 <img width="50%" src="https://i.imgur.com/Dum80aI.jpg">
-> идельно описывает курс
+
+> идеально описывает курс
 
 ## Лабы <a name="labs"></a>
 
