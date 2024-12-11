@@ -25,7 +25,9 @@
 
 ### 2 рубеж
 
-ну что сказать, хуй
+https://docs.google.com/document/d/1-uY0-ha_8qpkpMh3lWjl42GWy-9_x_jlfwIU8164g_4/edit?tab=t.0
+
+https://docs.google.com/document/d/1UQyfitodTupxYZxZvNpDuzt3X2MtcDqVC8cjVocX8Vc/edit?tab=t.0
 
 ## Экзамен <a name="exam"></a>
 
