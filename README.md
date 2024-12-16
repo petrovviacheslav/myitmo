@@ -45,7 +45,8 @@
 - DGVM_DGMA - Дополнительные главы высшей математики / дополнительные главы мат. анализа
 - 1/2/3/... term - 1/2/3/... семестр
 
-В определённый момент я решил выпилить работы по предметам, которые сильно варьируются, поэтому бессмысленных работ по матану, линалу, тфкп, ... тут нет
+В определённый момент я решил выпилить работы по предметам, которые сильно варьируются, поэтому бессмысленных работ по
+матану, линалу, тфкп, ... тут нет
 
 </details>
 
@@ -61,6 +62,7 @@
 | [RedGry](https://github.com/RedGry/ITMO), [EgorMIt](https://github.com/EgorMIt/ITMO), [maxbarsukov](https://github.com/maxbarsukov/itmo), [RomanVassilchenko](https://github.com/RomanVassilchenko/ITMOProjects)                                                                                                                          | Популярные репозитории с работами           |
 | [Black Rider](https://github.com/eliteSufferer/ITMO_Studies), [kamil](https://github.com/pro100kamil/itmo/), [belovlaska](https://github.com/belovlaska/itmo), [CodeAxeAttacks](https://github.com/CodeAxeAttacks/SystemApplicationSoftware-09.03.04-ITMO), [VeraKasianenko](https://github.com/VeraKasianenko/ITMO_Software_engineering) | Репозитории других ребят (поступили в 2022) |
 | [bilyardvmetro](https://github.com/bilyardvmetro/ITMO-System-Application-Software)                                                                                                                                                                                                                                                        | Репозитории других ребят (поступили в 2023) |
+| [AstroSoup](https://github.com/AstroSoup/ITMO.STUDY)                                                                                                                                                                                                                                                                                      | Репозитории других ребят (поступили в 2024) |
 | https://205826.github.io                                                                                                                                                                                                                                                                                                                  | Легенда                                     |
 | [MakeCheerfulUpload](https://github.com/orgs/MakeCheerfulUpload/repositories)                                                                                                                                                                                                                                                             | Сборник работ 1 сема                        |
 | https://rosroble.github.io/                                                                                                                                                                                                                                                                                                               | Конспекты к лабам                           |
