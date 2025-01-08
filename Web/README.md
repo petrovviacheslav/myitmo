@@ -47,7 +47,17 @@ https://docs.google.com/document/d/1UQyfitodTupxYZxZvNpDuzt3X2MtcDqVC8cjVocX8Vc/
 
 </details>
 
+<details>
+<summary><h2>3 лаба</h2></summary>
 
+</details>
+
+<details>
+<summary><h2>4 лаба</h2></summary>
+
+Если хотите прихуеть - https://github.com/test-290806/web4_backend_EE + https://github.com/test-290806/web4_frontend_react
+
+</details>
 
 
 

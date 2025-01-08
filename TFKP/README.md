@@ -5,5 +5,4 @@
 
 лаба1 - https://drive.google.com/drive/folders/12lBU-8ts1kpQR_4kn86B0mSz5JdeJ7dd
 
-лаба2 - 
 
