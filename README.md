@@ -75,7 +75,7 @@
 [![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Проект доступен с открытым исходным кодом на условиях [Лицензии CC BY-NC-SA 4.0](./LICENSE).<br>
-*Авторские права 2024 Вячеслав Петров и Андрей Казарин*<br>
+*Авторские права 2025 Вячеслав Петров и Андрей Казарин*<br>
 
 <a href="https://github.com/petrovviacheslav/myitmo/graphs/contributors">
   <img alt="contributors" src="https://contrib.rocks/image?repo=petrovviacheslav/myitmo" />

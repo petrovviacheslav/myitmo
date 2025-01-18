@@ -25,9 +25,9 @@
 
 ### 2 рубеж
 
-https://docs.google.com/document/d/1-uY0-ha_8qpkpMh3lWjl42GWy-9_x_jlfwIU8164g_4/edit?tab=t.0
-
-https://docs.google.com/document/d/1UQyfitodTupxYZxZvNpDuzt3X2MtcDqVC8cjVocX8Vc/edit?tab=t.0
+пиздец x2:
+- https://docs.google.com/document/d/1-uY0-ha_8qpkpMh3lWjl42GWy-9_x_jlfwIU8164g_4/edit?tab=t.0
+- https://docs.google.com/document/d/1UQyfitodTupxYZxZvNpDuzt3X2MtcDqVC8cjVocX8Vc/edit?tab=t.0
 
 ## Экзамен <a name="exam"></a>
 
@@ -36,28 +36,6 @@ https://docs.google.com/document/d/1UQyfitodTupxYZxZvNpDuzt3X2MtcDqVC8cjVocX8Vc/
 ## Лабы <a name="labs"></a>
 
 
-<details>
-<summary><h2>1 лаба</h2></summary>
 
-</details>
-
-
-<details>
-<summary><h2>2 лаба</h2></summary>
-
-</details>
-
-<details>
-<summary><h2>3 лаба</h2></summary>
-
-</details>
-
-<details>
-<summary><h2>4 лаба</h2></summary>
-
-Если хотите прихуеть - https://github.com/test-290806/web4_backend_EE + https://github.com/test-290806/web4_frontend_react
-
-</details>
-
-
+Если хотите прихуеть по 4 лабе - https://github.com/test-290806/web4_backend_EE + https://github.com/test-290806/web4_frontend_react
 
