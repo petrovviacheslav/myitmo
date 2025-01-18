@@ -16,7 +16,7 @@
 
 - [Журнал успеваемости потока 2024-25 учебного года 3 семестра](https://docs.google.com/spreadsheets/d/1R3RU3dFve2SOuQSfupe389L8gA0disCxe9aRbBn8UGY/edit)
 
-Вся инфа содержится по ссылке - https://gitlab.se.ifmo.ru/programming-languages/cse-programming-languages-fall-{год обучения}/main
+Вся инфа содержится по ссылке - https://gitlab.se.ifmo.ru/programming-languages/cse-programming-languages-fall-{год_обучения}/main
 
 Например, https://gitlab.se.ifmo.ru/programming-languages/cse-programming-languages-fall-2024/main
 
