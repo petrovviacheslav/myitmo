@@ -1,5 +1,8 @@
 ﻿.idea/
 .venv/
+**/.idea
+**/cmake-build-debug
+Computational-mathematics/lab1/.venv
 
 **/*.iml
 **/**/*.iml
