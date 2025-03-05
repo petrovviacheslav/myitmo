@@ -2,7 +2,7 @@ name: hello
 limit: 2000
 memory_size: 0x1000
 input_streams:
-  0x80: [5]
+  0x80: [47001]
   0x84: []
 reports:
   - name: Step-by-step
@@ -16,4 +16,4 @@ reports:
       numio[0x84]: {io:0x84:dec}
     assert: |
       numio[0x80]: [] >>> []
-      numio[0x84]: [] >>> [15]
+      numio[0x84]: [] >>> [1104570501]

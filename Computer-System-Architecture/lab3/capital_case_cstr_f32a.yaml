@@ -2,14 +2,14 @@ name: "f32a capital_case_cstr"
 limit: 2000
 memory_size: 0x1000
 input_streams:
-  0x80: [104, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100, 10]
+  0x80: [72, 69, 76, 76, 79, 32, 87, 79, 82, 76, 68, 33, 10]
   0x84: []
 reports:
-  - name: Step-by-step log
+  - name: Step-by-step
     slice: all
     view: |
       T = {T:hex}; S = {S:hex}; 0x84 = {io:0x84}
-      {pc}:	{instruction}	{pc:label}
+      {pc}:	{instruction} {pc:label}
   - name: Result
     slice: last
     filter:
@@ -22,7 +22,7 @@ reports:
       {memory:0:31}
     assert: |
       numio[0x80]: [] >>> []
-      numio[0x84]: [] >>> [72,101,108,108,111,32,87,111,114,108,100]
+      numio[0x84]: [] >>> [72,101,108,108,111,32,87,111,114,108,100,33]
       numio[0x80]: "" >>> ""
-      numio[0x84]: "" >>> "Hello World"
-      mem[0..31]: 	48 65 6c 6c 6f 20 57 6f 72 6c 64 00 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f
+      numio[0x84]: "" >>> "Hello World!"
+      mem[0..31]: 	48 65 6c 6c 6f 20 57 6f 72 6c 64 21 00 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f 5f

@@ -1,86 +1,96 @@
     .data
 
-buffer:                 .word  0x0
-buffer2:                 .word  0x0
-buffer3:                 .word  0x0
-buffer4:                 .word  0x0
-buffer5:                 .word  0x0
-buffer6:                 .word  0x0
-buffer7:                 .word  0x0
-buffer8:                 .word  0x0
-\output_addr:           .word  132               \ Output address where the result should be stored
-
-input_addr:             .word  0x80   
+buffer1:                 .word  0x5f5f5f5f
+buffer2:                 .word  0x5f5f5f5f
+buffer3:                 .word  0x5f5f5f5f
+buffer4:                 .word  0x5f5f5f5f
+buffer5:                 .word  0x5f5f5f5f
+buffer6:                 .word  0x5f5f5f5f
+buffer7:                 .word  0x5f5f5f5f
+buffer8:                 .word  0x5f5f5f5f
+buffer_ptr:              .word  0x0
+input_addr:              .word  0x80
 
     .text
 
 _start:
+    @p input_addr b!       \ stack <- input_addr and stack -> b
+    @p buffer_ptr a!       \ stack <- buffer_ptr and stack -> a
 
-    @p input_addr b!        \ пушит в стек значение input_addr и забирает его в регистр b
+    lit 32                 \ stack <- counter
+    lit -32                \ stack <- start bias
+read_input:
+    !                      \ bias -> buffer
+    dup                    \ counter duplication
+    if over_may            \ if counter == 0 --> overflow
 
-    @p buffer a!          \ пушит в стек значение buffer и забирает его в регистр а
+    @b                     \ stack <- mem[input_addr]
 
-
-    lit 32                \ базовый счётчик
-    lit -32               \ изначальное уменьшение 
-cycle:
-    over \ счетчик из stack[1] дублируем вниз
-    if end
-
-    @b \ читаем букву в стек из input_addr
-
-    dup
-    lit -97 +  \ 97 - а в нимжнем регистре
-    -if go_lol \ если буква и так в верхнем регистре или пробел, то lol
-
-go:
-    + \ увеличиваем если надо
-    dup
+    dup                    \ input symbol duplication
     lit -10 +
-    if next
+    if end_str             \ if symbol == '\n' --> end of string
 
-    dup
-    lit -32 +   \ пробел
-    if spec
+    dup                    \ input symbol duplication
+    lit -32 +
+    if space               \ if symbol == ' ' --> instructions for space
 
-    dup
-    !+   \ получем значение из стека и увеличиваем счётчик буфера
-    !p 0x84
+    dup                     \ input symbol duplication
+    lit -97 +
+    -if low_level           \ if letter - lowercase --> instructions for lowercase
 
-    lit -1 +
-    lit 0
-    cycle ;
+    dup                     \ input symbol duplication
+    lit -65 +
+    -if up_level            \ if letter - uppercase --> instructions for uppercase
 
-go_lol:
-    over   \ тут будет или -32 или 0
-    if go   \ если 0 можно спокойно складывать
+    dup                     \ input symbol duplication
+    lit 0 +
+    -if just_read           \ other symbols
 
-    lit 32 +
-    go ;
+    up_level:
+        lit 32 +            \ add 32 to make the letter smaller
+    low_level:
+        @                   \ stack <- bias
+        +                   \ letter += bias
+    just_read:
+        !+                  \ symbol -> a and a += 1
 
-spec:
-    dup
-    !+   \ получем значение из стека и увеличиваем счётчик буфера
-    !p 0x84
+        lit -1 +            \ counter decrement
+        lit 0               \ stack <- new bias
+        read_input ;
 
-    lit -1 +
-    lit -32
-    cycle ;
+    space:
+        !+                  \ symbol -> a and a += 1
 
-next:
-    lit -10 + 
-    !+ \ читаем ноль и двигаем буффер
-    lit -1 +
-    
-while:
-    dup
-    if end
-    
-    lit 0x5f
-    !+     \ пишет в нужную ячейку памяти и увеличивает счётчик
+        lit -1 +            \ counter decrement
+        lit -32             \ stack <- new bias
+        read_input ;
 
-    lit -1 +
-    while ;
+end_str:
+    lit -10 +               \ decrease '\n'
+null_elem:
+    lit 0x5f5f5f00 +        \ eq stack[0] or 0x5f5f5f00
+    !+                      \ symbol -> a and a += 1
+    drop                    \ drop counter
+    print
+
+over_may:
+    lit 0xCCCCCCCC
+    !p 0x84                 \ 0xCCCCCCCC -> mem[output_addr]
+    halt
+
+print:
+    @p buffer_ptr           \ stack <- buffer_ptr
+    lit 0xFF000000 and      \ clear other bytes
+    a!                      \ buffer_ptr -> a
+
+    output_while:
+        @+
+        lit 0xFF and        \ need only the last byte
+        dup
+        if end              \ if symbol == 0 --> end
+
+        !p 0x84             \ symbol -> mem[output_addr]
+        output_while ;
 
 end:
     halt

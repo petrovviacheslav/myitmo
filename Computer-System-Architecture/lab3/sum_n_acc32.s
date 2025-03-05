@@ -1,39 +1,45 @@
     .data
 
-
 num:             .word  0
 input_addr:      .word  0x80
 output_addr:     .word  0x84
 const_1:         .word  1
-const_v:         .word  0x80000000
 
     .text
 
 _start:
-
     load_ind     input_addr
-    store        num                           ; num <- input
-    
+    store        num                  ; num <- input
+
     beqz         err
-    ble          err
+    ble          err                  ; num <= 0 --> err
 
-    add          const_1
-    
+    and          const_1              ; remainder 2
+    beqz         input_multiple_two
+
+    load         num                  ; acc <- num
+    add          const_1              ; acc += 1
+    shiftr       const_1              ; shift on 1 bit (division)
     mul          num
-    bvs          over
 
-    shiftr       const_1
+    jmp end
 
-    store_ind    output_addr
-    halt
+input_multiple_two:
+    load         num                  ; acc <- num1
+    add          const_1              ; acc += 1
+    store        num                  ; num <- acc
+    sub          const_1              ; acc -= 1
+    shiftr       const_1              ; shift on 1 bit (division)
+    mul          num
+    jmp end
 
 err:
-    load_imm     -1
-    store_ind    output_addr                 ; mem[mem[output_addr]] = -1
-    halt
+    load_imm     -1                   ; acc <- -1
+    jmp end
 
 over:
-    load_imm     0xCCCCCCCC
-    store_ind    output_addr                 ; mem[mem[output_addr]] = 0xCCCCCCCC
-    halt
+    load_imm     0xCCCCCCCC          ; acc <- 0xCCCCCCCC
 
+end:
+    store_ind    output_addr
+    halt
