@@ -21,7 +21,7 @@ _start:
     add          const_1              ; acc += 1
     shiftr       const_1              ; shift on 1 bit (division)
     mul          num
-
+    bvs          over
     jmp end
 
 input_multiple_two:
@@ -31,6 +31,7 @@ input_multiple_two:
     sub          const_1              ; acc -= 1
     shiftr       const_1              ; shift on 1 bit (division)
     mul          num
+    bvs          over
     jmp end
 
 err:
