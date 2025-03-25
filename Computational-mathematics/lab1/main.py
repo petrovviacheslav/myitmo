@@ -5,6 +5,7 @@ import numpy as np
 
 
 def print_matrix_in_table(matrix, n):
+    """ Красивый вывод в консоль таблицы коэффициентов """
     table = PrettyTable()
     table.field_names = ["k" + str(i + 1) if i < n else "b" for i in range(n + 1)]
     for row in matrix:
@@ -27,7 +28,7 @@ def get_file():
         code_error = 0
         with open(file_path, 'r') as input_file:
             n = int(input_file.readline())
-            if n <= 0:
+            if n <= 0 or n > 20:
                 code_error = 1
             for string in input_file.readlines():
                 line_matrix = list(map(int, string.strip().split()))
@@ -44,8 +45,8 @@ def get_file():
 def get_keyboard():
     """ Получение порядка матрицы и самой матрицы с клавиатуры """
     n = int(input("Введите порядок матрицы: n = "))
-    while n <= 0:
-        n = int(input("Порядок матрицы должен быть > 0. Введите порядок матрицы: n = "))
+    while n <= 0 or n > 20:
+        n = int(input("Порядок матрицы должен быть > 0 и <= 20. Введите порядок матрицы: n = "))
 
     matrix = []
     for i in range(n):
@@ -62,8 +63,8 @@ def get_keyboard():
 def get_random():
     """ Создание матрицы заданной размерности со случайными значениями """
     n = int(input("Введите порядок матрицы: n = "))
-    while n <= 0:
-        n = int(input("Порядок матрицы должен быть > 0. Введите порядок матрицы: n = "))
+    while n <= 0 or n > 20:
+        n = int(input("Порядок матрицы должен быть > 0 и <= 20. Введите порядок матрицы: n = "))
     return [[random.randint(-20, 20) for _ in range(n + 1)] for _ in range(n)]
 
 
@@ -96,6 +97,7 @@ def matrix_transformation(matrix, n):
 
 
 def gauss_method(matrix, n):
+    """ Решение системы, используя метод Гаусса с выбором главного элемента по столбцам """
     new_matrix = matrix_transformation(matrix, n)
     determinant = get_determinant(matrix, n)
     if determinant == 0:
@@ -120,6 +122,7 @@ def gauss_method(matrix, n):
 
 
 def start():
+    """ Начальная функция для определения типа ввода данных от пользователя """
     print("Решение системы линейных алгебраических уравнений методом Гаусса с выбором главного элемента по столбцам")
     file_or_keyboard_or_random = ""
     while file_or_keyboard_or_random != "f" and file_or_keyboard_or_random != "k" and file_or_keyboard_or_random != "r":

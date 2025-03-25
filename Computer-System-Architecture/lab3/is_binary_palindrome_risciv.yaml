@@ -1,0 +1,18 @@
+limit: 200
+memory_size: 0x90
+input_streams:
+  0x80: [4026531855]
+  0x84: []
+reports:
+  - name: step-by-step
+    slice: all
+    view: |
+      {pc}:	{instruction} {pc:label}; counter = {T4:hex}; sum bit by bit = {A5:hex}; result = {S1:hex}, t3 = {T3:hex}
+  - name: result
+    slice: last
+    view: |
+      numio[0x80]: {io:0x80:dec}
+      numio[0x84]: {io:0x84:dec}
+    assert: |
+      numio[0x80]: [] >>> []
+      numio[0x84]: [] >>> [1]
