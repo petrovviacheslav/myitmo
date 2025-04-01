@@ -1,6 +1,3 @@
-//
-// Created by petrovviacheslav on 17.02.25.
-//
 #include <iostream>
 #include <map>
 #include <queue>

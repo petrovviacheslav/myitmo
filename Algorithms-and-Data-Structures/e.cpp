@@ -1,7 +1,3 @@
-//
-// Created by petrovviacheslav on 18.02.25.
-//
-
 #include <iostream>
 #include <vector>
 using namespace std;
