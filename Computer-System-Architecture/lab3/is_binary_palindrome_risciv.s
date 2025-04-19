@@ -99,6 +99,6 @@ print_res:
 
     lw       t0, 0(t0)                       ; t0 = 0x84
 
-    sw       a0, 0(t0)                       ; *output_addr_const = s6;
+    sw       a0, 0(t0)                       ; *output_addr_const = a0;
 
     jr       ra

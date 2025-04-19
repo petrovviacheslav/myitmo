@@ -8,6 +8,7 @@ Computational-mathematics/lab1/.venv
 **/**/*.iml
 **/**/**/*.iml
 
+**/*-task.cpp
 Computer-System-Architecture/lab3/wrench
 Computer-System-Architecture/lab3/wrench-fmt
 Computer-System-Architecture/lab3/wrench-serv
