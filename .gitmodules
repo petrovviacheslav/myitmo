@@ -24,3 +24,9 @@
 [submodule "Web/Labs/lab3"]
 	path = Web/Labs/lab3
 	url = https://github.com/sub-myitmo/web-3.git
+[submodule "Fundamentals-of-Software-Engineering/lab4"]
+	path = Fundamentals-of-Software-Engineering/lab4
+	url = https://github.com/kihort-si/opi-lab4.git
+[submodule "Fundamentals-of-Software-Engineering/lab3"]
+	path = Fundamentals-of-Software-Engineering/lab3
+	url = https://github.com/sub-myitmo/fse-3.git
