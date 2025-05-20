@@ -124,7 +124,7 @@
 | [Алгоритмы и структуры данных](./Algorithms-and-Data-Structures)                    | -      | -    | -           |
 | [Основы программной инженерии](./Fundamentals-of-Software-Engineering)              | -      | -    | -           |
 | [Физика](./Physics) + [проект](https://github.com/petrovviacheslav/physics-project) | -      | -    | -           |
-| Математическая статистика                                                           | -      | -    | -           |
+| [Математическая статистика](./Math-stat)                                            | -      | -    | -           |
 | [Вычислительная математика](./Computational-mathematics)                            | зачёт  | -    |             |
 | ТПВ                                                                                 | зачёт  | -    |             |
 | Методы оптимизации                                                                  | зачёт  | -    |             |
