@@ -22,6 +22,8 @@
 
 [Журнал успеваемости потока 2024-25 учебного года 4 семестра](https://docs.google.com/spreadsheets/d/1Tdmb-OZQnCgKuEILvNlSlzJOTsNEMZH8cKBwpl-xlV8/edit?gid=580192402#gid=580192402)
 
+Моя схема - https://docs.google.com/document/d/1oaZTLrk3mOArC03n4lE5z_-OkPzXBuRGsfrdULZ9Sn4/edit?usp=sharing
+
 ## Тесты <a name="tests"></a>
 
 Вопросы частично меняются каждый год. Будьте внимательны! Пенской ещё любит добавлять вопросы по поводу того, что спросить у докладчика по лаб1, но тут как чувствуете отвечайте.
