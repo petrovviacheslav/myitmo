@@ -4,4 +4,3 @@
 Лектор: Волхонцев Андрей Алексеевич, практик: Литвинова Наталья Александровна
 
 практика поток 3.14.2 - https://drive.google.com/drive/folders/1Jpn87TEAm56WrU13bRPqDc1i8xqBwatU
-
