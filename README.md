@@ -101,35 +101,35 @@
 <details>
 <summary><h2>3 семестр</h2></summary>
 
-| предмет                               | оценка | балл | комментарий                                                                         |
-|---------------------------------------|--------|------|-------------------------------------------------------------------------------------|
-| ДГВМ                                  | 4C     | 79   | Чилл у исаевой (всё было скатано)                                                   |
-| [ТФКП](./TFKP)                        | 5A     | 95.5 | не советую Милюшина точно                                                           |
-| [Физика](./Physics)                   | 4C     | 78   | Сорокина супер, прям вайб, даже без экза поставила 4                                |
-| [Веб-программирование](./Web)         | 4C     | 78.3 | интересна только 4 лаба, остальное полное дерьмо, система оценивания самая уёбищная |
-| [Языки программирования](./ProgLangs) | 5A     | 91   | тот самый антиплагиат))                                                             |
-| [Бмс](./BMS)                          | 5A     | 94   | ну пойдёт, очередной бесполезный предмет фтми((                                     |
-| Английский B1.1                       | зачёт  | 73   |                                                                                     |
-| Физическая культура                   | зачёт  | 100  |                                                                                     |
-| Теория вероятностей                   | зачёт  | 79   |                                                                                     |
+| предмет                                                                     | оценка | балл | комментарий                                                                         |
+|-----------------------------------------------------------------------------|--------|------|-------------------------------------------------------------------------------------|
+| ДГВМ                                                                        | 4C     | 79   | Чилл у исаевой (всё было скатано)                                                   |
+| [ТФКП](./TFKP)                                                              | 5A     | 95.5 | не советую Милюшина точно                                                           |
+| [Физика](./Physics)                                                         | 4C     | 78   | Сорокина супер, прям вайб, даже без экза поставила 4                                |
+| [Веб-программирование](./Web)                                               | 4C     | 78.3 | интересна только 4 лаба, остальное полное дерьмо, система оценивания самая уёбищная |
+| [Языки программирования](./ProgLangs)                                       | 5A     | 91   | тот самый антиплагиат))                                                             |
+| [Бмс](./BMS)                                                                | 5A     | 94   | ну пойдёт, очередной бесполезный предмет фтми((                                     |
+| Английский B1.1                                                             | зачёт  | 73   |                                                                                     |
+| Физическая культура                                                         | зачёт  | 100  |                                                                                     |
+| [Теория вероятностей](https://github.com/sub-myitmo/gdz-chistyakov-teorver) | зачёт  | 79   |                                                                                     |
 
 </details>
 
 <details>
 <summary><h2>4 семестр</h2></summary>
 
-| предмет                                                                             | оценка | балл | комментарий |
-|-------------------------------------------------------------------------------------|--------|------|-------------|
-| [Архитектура компьютера](./Computer-System-Architecture)                            | -      | -    | -           |
-| [Алгоритмы и структуры данных](./Algorithms-and-Data-Structures)                    | -      | -    | -           |
-| [Основы программной инженерии](./Fundamentals-of-Software-Engineering)              | -      | -    | -           |
-| [Физика](./Physics) + [проект](https://github.com/petrovviacheslav/physics-project) | -      | -    | -           |
-| [Математическая статистика](./Math-stat)                                            | -      | -    | -           |
-| [Вычислительная математика](./Computational-mathematics)                            | зачёт  | -    |             |
-| ТПВ                                                                                 | зачёт  | -    |             |
-| Методы оптимизации                                                                  | зачёт  | -    |             |
-| Физическая культура                                                                 | зачёт  | 100  |             |
-| Английский B1.1                                                                     | зачёт  | -    |             |
+| предмет                                                                             | оценка | балл  | комментарий                                          |
+|-------------------------------------------------------------------------------------|--------|-------|------------------------------------------------------|
+| [Архитектура компьютера](./Computer-System-Architecture)                            | 4C     | 75    | "все студенты - ленивые дебилы)" ©                   |
+| [Алгоритмы и структуры данных](./Algorithms-and-Data-Structures)                    | 4C     | 75    | тотальное пиво, главное не попадитесь на антиплагиат |
+| [Основы программной инженерии](./Fundamentals-of-Software-Engineering)              | -      | -     | очень много воды                                     |
+| [Физика](./Physics) + [проект](https://github.com/petrovviacheslav/physics-project) | 5A     | 90.43 | чуть постарался и вышло 5                            |
+| [Математическая статистика](./Math-stat)                                            | 4C     | 74.5  | лимар просто легенда, хз что ещё сказать             |
+| [Вычислительная математика](./Computational-mathematics)                            | зачёт  | 69.5  |                                                      |
+| ТПВ                                                                                 | зачёт  | 66    |                                                      |
+| [Методы оптимизации](https://github.com/timur1516/methods-of-optimization)          | зачёт  | 73    |                                                      |
+| Физическая культура                                                                 | зачёт  | 100   |                                                      |
+| Английский B1.1                                                                     | зачёт  | 71    |                                                      |
 
 </details>
 
@@ -140,7 +140,7 @@
 | [Гайд для перваков](https://github.com/Imtjl/1st-year-guide), [гайд для втораков](https://github.com/Imtjl/2nd-year-guide)                                                                                                                                                                                                                                                                                                                                 | Ребята сделали просто классные гайды        |
 | [RedGry](https://github.com/RedGry/ITMO), [EgorMIt](https://github.com/EgorMIt/ITMO), [maxbarsukov](https://github.com/maxbarsukov/itmo), [RomanVassilchenko](https://github.com/RomanVassilchenko/ITMOProjects)                                                                                                                                                                                                                                           | Популярные репозитории с работами           |
 | [Black Rider](https://github.com/eliteSufferer/ITMO_Studies), [CodeAxeAttacks](https://github.com/CodeAxeAttacks/SystemApplicationSoftware-09.03.04-ITMO), [VeraKasianenko](https://github.com/VeraKasianenko/ITMO_Software_engineering), [Kuchizu](https://github.com/Kuchizu/ItmoLabs), [FEgor04](https://github.com/FEgor04/labs), [Zerumi](https://github.com/Zerumi-ITMO-Related), [Artemy Kulbako](https://github.com/testpassword?tab=repositories) | Репозитории других ребят (поступили в 2022) |
-| [bilyardvmetro](https://github.com/bilyardvmetro/ITMO-System-Application-Software), [awesoma31](https://github.com/awesoma31/ITMO_Labs), [rmntim](https://github.com/rmntim/ITMO/tree/main)                                                                                                                                                                                                                                                                                                              | Репозитории других ребят (поступили в 2023) |
+| [bilyardvmetro](https://github.com/bilyardvmetro/ITMO-System-Application-Software), [awesoma31](https://github.com/awesoma31/ITMO_Labs), [rmntim](https://github.com/rmntim/ITMO/tree/main)                                                                                                                                                                                                                                                                | Репозитории других ребят (поступили в 2023) |
 | [AstroSoup](https://github.com/AstroSoup/ITMO.STUDY), [ldpst](https://github.com/ldpst/itmo)                                                                                                                                                                                                                                                                                                                                                               | Репозитории других ребят (поступили в 2024) |
 | https://205826.github.io                                                                                                                                                                                                                                                                                                                                                                                                                                   | Легенда                                     |
 | [MakeCheerfulUpload](https://github.com/orgs/MakeCheerfulUpload/repositories), [kamil](https://github.com/pro100kamil/itmo/), [belovlaska](https://github.com/belovlaska/itmo)                                                                                                                                                                                                                                                                             | Сборник работ 1 сема + кто забросил гитхаб  |
