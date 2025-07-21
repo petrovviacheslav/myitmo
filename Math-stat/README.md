@@ -8,6 +8,8 @@
 
 ### Контрольные работы
 
+Это работает только для потока Лимара! (но ргр были одни и те же у всех потоков)
+
 В первой половине семестра было 3 кр (в каждой по одной задаче) - это 3 первых задания с [фото](./пример-работы.png). Последнее задание - это кр за вторую часть семестра.
 
 ### РГР
@@ -23,4 +25,4 @@
     - Решение - https://colab.research.google.com/drive/1GF42GnvSRiby2BrRQq93ZqtFVgl7-H8o?usp=sharing
 - РГР4
     - Задание - https://drive.google.com/file/d/1cgM_09FzjZTHUiIra3LnFFVILtIhPlDS/view
-    - Решение - 
+    - Решение - https://colab.research.google.com/drive/1Gh7rA4azTKFjd-z6S39kL1MjeCTxARlT?usp=sharing

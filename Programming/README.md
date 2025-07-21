@@ -124,7 +124,7 @@ Runtime.getRuntime().addShutdownHook(new Thread(() -> {
 </details>
 
 <details>
-<summary><h2>3 лаба</h2></summary>
+<summary><h2>3-4 лаба (раньше были разделены)</h2></summary>
 
 [Рофлогайд на эту лабу](https://www.youtube.com/watch?v=uZqMHOLqBsA&t=144s)
 
@@ -137,16 +137,7 @@ Uml лучше всего писать в IntelliJ IDEA Ultimate ([получи�
 - [SOLID](https://allineed.ru/development/java-development/82-java-solid-principles)
 - [интерфейсы по умолчанию](https://metanit.com/java/tutorial/3.7.php)
 - [теория по всему остальному](https://github.com/exception-s/course1?tab=readme-ov-file#%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-3)
-
-</details>
-
-<details>
-<summary><h2>4 лаба</h2></summary>
-
-Продолжение 3 лабы (просто добавить exception и различные классы). Тут хз как подсказать, просто используйте своё воображение.
-
-Для сдачи/выполнения:
-- [теория](https://github.com/exception-s/course1?tab=readme-ov-file#%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-4)
+- [теория для 4 лабы](https://github.com/exception-s/course1?tab=readme-ov-file#%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-4)
 
 </details>
 

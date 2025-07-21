@@ -15,6 +15,8 @@
 
 - [Журнал успеваемости потока 2024-25 учебного года 3 семестра](https://docs.google.com/spreadsheets/d/1vs1xQkT7KoZPZGVcM2BVqdXDqxqEZBsplkQocgepxxU/edit?gid=1268936541#gid=1268936541)
 
+Ахуеть, что было раньше - https://se.ifmo.ru/courses/iaps-pre-2017
+
 ## Рубежки <a name="rubez"></a>
 
 ### 1 рубеж

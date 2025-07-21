@@ -67,6 +67,81 @@
 <details>
 <summary>Примеры</summary>
 
+Концептуальное описание того, что надо сделать
+
+```
+; работает для n-разрядных чисел, где n <= 16.
+ORG 0x100;
+ARRAY_PTR: WORD 0x600; адрес начала массива по которому мы проходимся
+ARRAY_LEN: WORD 0x1F; длина заданного массива
+MULTIPLIER: WORD 0xA; A из F(x) = A*x + B 
+CONST: WORD 1046; B из F(x) = A*x + B 
+ANS_PTR: WORD 0x400; адрес начала записи массива размапленных 32-битовых чисел
+; СЛУЖЕБНЫЕ ПЕРЕМЕННЫЕ
+ARRAY_ITER: WORD ?; итератор по заданнаму массиву
+MULT_ITER: WORD ?; итератор для умножения
+FIRST_WORD: WORD 0x0; первое слово ответа
+SECOND_WORD: WORD 0x0; второе слово ответа
+FIRST_NUMBER: WORD 0x0; первое слово числа приведенного к 32-битному формату
+SECOND_NUMBER: WORD 0x0; второе слово числа приведенного к 32-битному формату
+
+START:
+LD ARRAY_LEN; загружаем длину массива
+ST ARRAY_ITER; и инициализируем итератор
+
+MAIN_LOOP:
+LD (ARRAY_PTR)+; загружаем текущее число
+CALL FUNC; вызываем функцию которую размапливаем
+LOOP ARRAY_ITER; цикл
+JUMP MAIN_LOOP; все еще цикл
+HLT; останов если массив кончився
+
+FUNC:
+
+ST FIRST_NUMBER; записываем полученное n-битное число в младшее слово
+LD MULTIPLIER; загружаем множитель
+ST MULT_ITER; инициализируем итератор
+LD FIRST_NUMBER; снова загружаем число чтобы понять какой знак и соответственно его расширить на старшее слово
+
+BMI NEGATIVE; если число положительное то
+CLA; записываем нулики
+ST SECOND_NUMBER; в старшее слово
+JUMP CALC; переходим к вычислению
+
+NEGATIVE: ; если число отрицательное то
+CLA; записываем нулики
+NOT; инвертируем в единички
+ST SECOND_NUMBER; записываем в старшее слово
+
+CALC:
+LD FIRST_WORD; загружаем младшее слово ответа
+ADD FIRST_NUMBER; прибавляем младшее слово чиселка
+ST FIRST_WORD; записываем младшее слово ответа
+LD SECOND_WORD; загружаем старшее слово ответа
+ADC SECOND_NUMBER; прибавляем старшее слово чиселка и перенос из младшего слова
+ST SECOND_WORD; записываем старшее слово ответа
+LOOP MULT_ITER; циклимся чтобы умножать
+JUMP CALC; все еще циклимся
+
+LD FIRST_WORD; загружаем младшее слово
+ADD CONST; прибавляем B
+ST FIRST_WORD; записываем младшее слово
+LD SECOND_WORD; загружаем старшее слово
+ADC #0; прибавляем 0 и С если оно есть
+ST SECOND_WORD; записываем старшее слово
+
+LD FIRST_WORD; загружаем младшее слово
+ST (ANS_PTR)+; записываем в массив ответов
+LD SECOND_WORD; загружаем старшее слово
+ST (ANS_PTR)+; записываем в массив ответов
+CLA; затираем слова
+ST FIRST_WORD; все еще затираем слова
+ST SECOND_WORD; не поверите...
+RET; выходим из функции
+```
+
+---
+
 ````
 ORG 0x100
 
@@ -649,6 +724,7 @@ NEG_ELEM:  LD $CURR_ELEM  ; Подфункция для суммирования
 
 Хороший гайд от Zerumi - https://www.youtube.com/watch?v=vuW08kTodJM
 
+Файлик в котором тоже можно посмотреть полезное - https://docs.google.com/spreadsheets/d/1o48u14qvOxD4vGj8GKwhTaU_V9k2HqpNV8Ys4oXJqbM/edit?gid=632913712#gid=632913712
 
 ## Лабы <a name="labs"></a>
 
@@ -749,10 +825,7 @@ NEG_ELEM:  LD $CURR_ELEM  ; Подфункция для суммирования
 
 ## Экзамен <a name="exam"></a>
 
-https://github.com/Imtjl/1st-year-guide/blob/main/OPD/%D0%91%D0%B8%D0%BB%D0%B5%D1%82%D1%8B_%D1%8D%D0%BA%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD_2.docx
-
-https://github.com/maxbarsukov/itmo/blob/master/1-2%20%D0%BE%D0%BF%D0%B4/%D1%8D%D0%BA%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD/%D0%91%D0%B8%D0%BB%D0%B5%D1%82%D1%8B%D0%AD%D0%BA%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%9E%D0%9F%D0%94.pdf
-
-
-![](https://i.imgur.com/nvfO5L3.jpg)
-
+Материалы для подготовки:
+- [ИМЕННО ТАКИЕ БИЛЕТЫ БУДУТ! ОНИ НЕ МЕНЯЮТСЯ!](https://i.imgur.com/nvfO5L3.jpg)
+- [с гайда](https://github.com/Imtjl/1st-year-guide/blob/main/OPD/%D0%91%D0%B8%D0%BB%D0%B5%D1%82%D1%8B_%D1%8D%D0%BA%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD_2.docx)
+- [от барсукова](https://github.com/maxbarsukov/itmo/blob/master/1-2%20%D0%BE%D0%BF%D0%B4/%D1%8D%D0%BA%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD/%D0%91%D0%B8%D0%BB%D0%B5%D1%82%D1%8B%D0%AD%D0%BA%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%9E%D0%9F%D0%94.pdf)
